@@ -5,7 +5,7 @@ export default function
   return (
     <>
          <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
-          <p>Membership birth</p>
+           
             <form action="">
             <div class="w-full">
                   <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Surname</label>
