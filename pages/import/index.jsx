@@ -110,7 +110,7 @@ useEffect(() => {
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Setup</h5>
     </a>
     <p class="mb-3 font-normal text-black dark:text-gray-400">This section is used to add a new Event to the database.</p> <br />
-    <a href="/events/detail" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+    <a href="/import/detail" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
       Setup
         <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -186,7 +186,21 @@ useEffect(() => {
     </a> : ""}
   </div>
 </div>
+<br/>
 
+
+
+ 
+ 
+
+</section>
+</div>
+
+<div class="p-4 sm:ml-64" >
+ 
+ 
+<section className='flex space-x-4 p-10'>
+   
 <div style={{backgroundColor:"white"}} class="max-w-sm p-6 text-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/events/detail/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Attendance</h5>
@@ -240,10 +254,6 @@ useEffect(() => {
     </a> : ""}
   </div>
 </div>
-
- 
- 
-
 </section>
 </div>
 
