@@ -23,7 +23,7 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Admin', href: '/admin' },
   { name: 'Find a service', href: '/' },
-  { name: 'Manage Events', href: '/' },
+  { name: 'User Guide', href: '/' },
  
 ]
 
@@ -31,10 +31,13 @@ const navigation = [
 
 export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
- 
+  const router = useRouter()
+  const path = router.pathname
+  
+  console.log("The current path for this route is ", path)
   return (
     <>
-    <div className="isolate bg-yellow-100">
+    <div className="isolate bg-yellow-50">
       <div className="absolute inset-x-0 top-[-10rem] transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
       
       </div>
@@ -64,7 +67,7 @@ export default function NavBar() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="f" className="text-sm font-semibold leading-6 text-gray-900">
+            <a href="/accounts/signup" className="text-sm font-semibold leading-6 text-gray-900">
               Create an account <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
