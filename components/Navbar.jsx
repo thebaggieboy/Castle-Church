@@ -24,6 +24,7 @@ const navigation = [
   { name: 'Admin', href: '/admin' },
   { name: 'Find a service', href: '/' },
   { name: 'User Guide', href: '/' },
+  
  
 ]
 
@@ -37,6 +38,9 @@ export default function NavBar() {
   console.log("The current path for this route is ", path)
   return (
     <>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+      
     <div className="isolate bg-yellow-50">
       <div className="absolute inset-x-0 top-[-10rem] transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
       
@@ -56,7 +60,7 @@ export default function NavBar() {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              <Bars3Icon className="h-6 w-6 sm:hidden" aria-hidden="true" />
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
@@ -66,6 +70,7 @@ export default function NavBar() {
               </a>
             ))}
           </div>
+          
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="/accounts/signup" className="text-sm font-semibold leading-6 text-gray-900">
               Create an account <span aria-hidden="true">&rarr;</span>
