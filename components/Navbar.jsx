@@ -21,7 +21,7 @@ import { useRouter } from 'next/router'
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Admin', href: '/' },
+  { name: 'Admin', href: '/admin' },
   { name: 'Find a service', href: '/' },
   { name: 'Manage Events', href: '/' },
  
