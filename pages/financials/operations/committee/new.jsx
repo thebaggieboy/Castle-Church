@@ -13,7 +13,7 @@ export default function AccountType() {
 
 <section class="bg-white dark:bg-gray-900">
   <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
-      <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Add a new formation </h2>
+      <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white"> </h2>
     
    
 
@@ -109,10 +109,8 @@ export default function AccountType() {
     </div>
         </div>
 
-
-          <button type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-black rounded-lg">
-              Add 
-          </button>
+<br />
+        <button className='bg-black text-white p-3'>Add</button> <br />
           <button type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-dark bg-primary rounded-lg">
               Clear
           </button>
