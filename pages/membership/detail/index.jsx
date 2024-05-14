@@ -149,7 +149,7 @@ useEffect(() => {
     <a href="/membership/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Rank</h5>
     </a>
-    <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">Setup rank.</p> <br />
+    <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">Setup rank information.</p> <br />
     <button onClick={showRankOptions == false ? showRank : unShowRank} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
         Add 
      
@@ -173,7 +173,7 @@ useEffect(() => {
     <a href="/service/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Group</h5>
     </a>
-    <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Setup group.</p> <br />
+    <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Setup group information.</p> <br />
     <button onClick={showServiceOptions == false ? showService : unShowService}  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
         Add 
        
@@ -201,7 +201,7 @@ useEffect(() => {
     <a href="">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Marital Status</h5>
     </a>
-    <p class="mb-3 font-normal text-black dark:text-gray-400">Setup marilatal status.</p> <br />
+    <p class="mb-3 font-normal text-black dark:text-gray-400">Setup marital status.</p> <br />
     <button onClick={showEventsOptions == false ? showEvents : unShowEvents}  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
         Add
         
@@ -225,7 +225,7 @@ useEffect(() => {
     <a href="/events/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Occupation</h5>
     </a>
-    <p class="mb-3 font-normal text-black dark:text-gray-400">This section is used to add a new Event to the database.</p> <br />
+    <p class="mb-3 font-normal text-black dark:text-gray-400">Setup occupation</p> <br />
     <button onClick={showOptions == false ? show : unShow}  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
         Add 
          
