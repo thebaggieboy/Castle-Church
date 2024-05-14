@@ -20,9 +20,9 @@ export default function members() {
     <a href="/admin/setup">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">Setup</h5>
     </a>
-    <p class="mb-3 font-normal  text-xs dark:text-gray-400">Create new setup for members, ranks, groups and others.</p> <br />
+    <p class="mb-3 font-normal  text-xs dark:text-gray-400">Setup members, ranks, groups and others.</p> <br />
     <a href="/admin/setup" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Start Setup 
+        Start 
     
     </a>
 </div>
@@ -30,9 +30,9 @@ export default function members() {
     <a href="/admin/user/setup">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">User</h5>
     </a>
-    <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is for setting up new user logon and roles to be used to access certain pages on the app.</p> <br />
+    <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Setup user permissions and admin roles.</p> <br />
     <a href="/admin/user/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
-        Create User
+        Setup
     
     </a>
 </div>
@@ -45,9 +45,9 @@ export default function members() {
     <a href="/backup/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Backup</h5>
     </a>
-    <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Backup database (Create a .bak file ).</p> <br />
+    <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Backup database.</p> <br />
     <a href="/backup/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
-       Backup Database
+       Backup
     
     </a>
 </div>
@@ -55,9 +55,9 @@ export default function members() {
     <a href="/events/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Security</h5>
     </a>
-    <p class="mb-3 font-normal text-black dark:text-gray-400">This section is used to add a new Event to the database.</p> <br />
+    <p class="mb-3 font-normal text-black dark:text-gray-400">Setup security.</p> <br />
     <a href="/events/create/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Setup Security
+        Setup
         <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
         </svg>
