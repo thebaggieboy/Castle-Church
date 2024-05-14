@@ -161,7 +161,7 @@ useEffect(() => {
     <a href="/membership/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Births</h5>
     </a>
-    <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">Member birth.</p> <br />
+    <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">Manage Birth information.</p> <br />
     <button onClick={showOptions == false ? show : unShow} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
         Add 
       
@@ -182,7 +182,7 @@ useEffect(() => {
     <a href="/service/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Marriages</h5>
     </a>
-    <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">.</p> <br />
+    <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Manage marriage information.</p> <br />
     <button onClick={showEventsOptions == false ? showEvents : unShowEvents}  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
         Add 
       
@@ -207,7 +207,7 @@ useEffect(() => {
     <a href="/membership/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Deaths</h5>
     </a>
-    <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">Manage Deaths .</p> <br />
+    <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">Manage Death information .</p> <br />
     <button onClick={showBudgetOptions == false ? showBudget : unShowBudget} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
         Add 
       
@@ -226,7 +226,7 @@ useEffect(() => {
     <a href="/membership/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Anointment</h5>
     </a>
-    <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">Manage anointment</p> <br />
+    <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">Manage Anointment information</p> <br />
     <button onClick={showBankOptions == false ? showBank : unShowBank} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
         Add
       
@@ -245,7 +245,7 @@ useEffect(() => {
     <a href="/membership/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Group</h5>
     </a>
-    <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">Member groups.</p> <br />
+    <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">Manage Group information.</p> <br />
     <button onClick={showFinanceOptions == false ? showFinance : unShowFinance} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
         Add 
       

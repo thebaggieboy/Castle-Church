@@ -91,7 +91,7 @@ console.log(activeLink)
              
             </Link>
          </li>
-  
+  <hr />
          <li>
             <Link href="/operations" class={`flex items-center p-2 ${path_ == "/operations" ? activeLink : 'text-white ' } rounded-lg dark:text-white hover:bg-gray-100 hover:text-black dark:hover:bg-gray-700 group`}>
             <svg class={`w-[30px] h-[30px] ${path_ == "/operations" ? iconColor : 'text-white'} dark:text-white`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
