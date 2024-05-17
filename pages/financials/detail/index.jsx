@@ -141,7 +141,7 @@ useEffect(() => {
     </a>
     <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to add a new Service to the database.</p> <br />
     <button onClick={showServiceOptions == false ? showService : unShowService}  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add Fund Channel
+        Add
        
     </button> <br />
     <div className="p-2 mt-2">
@@ -167,7 +167,7 @@ useEffect(() => {
     </a>
     <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">This section is used to setup a new Bank to the database.</p> <br />
     <button onClick={showOptions == false ? show : unShow} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add Bank
+        Add 
        
     </button> <br />
   <div className="p-2 mt-2">
@@ -191,7 +191,7 @@ useEffect(() => {
     </a>
     <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to setup a new Loan Account to the database.</p> <br />
     <button onClick={showEventsOptions == false ? showEvents : unShowEvents}  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add Loan Account
+        Add 
        
     </button> <br />
     <div className="p-2 mt-2">
@@ -220,7 +220,7 @@ useEffect(() => {
     </a>
     <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">This section is used to add a new Account type to the database.</p> <br />
     <button onClick={showBudgetOptions == false ? showBudget : unShowBudget} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add Account Type
+        Add 
        
     </button> <br />
   <div className="p-2 mt-2">
@@ -285,6 +285,35 @@ useEffect(() => {
   </div>
 </div>
 
+</section>
+<section className='  space-x-4 p-10'>
+   
+<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="/service/create/">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Income</h5>
+    </a>
+    <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to add a new Income to the database.</p> <br />
+    <button onClick={showServiceOptions == false ? showService : unShowService}  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+        Add
+       
+    </button> <br />
+    <div className="p-2 mt-2">
+  {showServiceOptions !== false ?  <a href='/financials/setup/income' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+       New
+   
+    </a> : ""}
+    {showServiceOptions !== false ?  <a href='/financials/setup/income' class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+       Edit
+   
+    </a> : ""} <br />
+
+    {showServiceOptions !== false ?  <a href='/financials/setup/income' class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-red rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+       Delete
+   
+    </a> : ""} <br />
+    
+  </div>
+</div>
 </section>
 </div>
 

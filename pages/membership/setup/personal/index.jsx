@@ -16,6 +16,14 @@ export default function CreateMembership() {
       <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Add a new member</h2>
       <form action="#">
           <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
+          <div class="sm:col-span-2">
+                  <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Membership No</label>
+                  <input type="file" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
+                  <button style={{backgroundColor:"black"}} type="submit" class="inline-flex items-center  px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white  rounded-lg">
+              Upload file 
+          </button>
+              </div>
+          
               <div class="sm:col-span-2">
                   <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Membership No</label>
                   <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
@@ -25,9 +33,18 @@ export default function CreateMembership() {
                   <label for="brand" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Surname</label>
                   <input type="text" name="brand" id="brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
               </div>
+           
               <div class="w-full">
                   <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Other Name</label>
                   <input type="number" name="Other Name" id="Other Name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
+              </div>
+              <div class="w-full">
+                  <label for="brand" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Current Rank</label>
+                  <input type="text" name="brand" id="brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
+              </div>
+              <div class="w-full">
+                  <label for="brand" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date of CCC Baptism</label>
+                  <input type="date" name="brand" id="brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Choose" required=""/>
               </div>
               <div>
                   <label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Marital Status</label>
@@ -39,6 +56,22 @@ export default function CreateMembership() {
                       <option value="PH">Widow</option>
                       <option value="PH">Widower</option>
                   </select>
+              </div>
+              <div class="w-full">
+                  <label for="brand" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date of Birth</label>
+                  <input type="date" name="brand" id="brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Choose" required=""/>
+              </div>
+              <div class="w-full">
+                  <label for="brand" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Age</label>
+                  <input type="number" name="brand" id="brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" disabled required=""/>
+              </div>
+              <div class="w-full">
+                  <label for="brand" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Years</label>
+                  <input type="number" name="brand" id="brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" disabled required=""/>
+              </div>
+              <div class="w-full">
+                  <label for="brand" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Month</label>
+                  <input type="number" name="brand" id="brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" disabled required=""/>
               </div>
               <div>
                   <label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sex</label>
@@ -67,16 +100,27 @@ export default function CreateMembership() {
 <input type="number" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
 </div> <div class="w-full">
 <label for="brand" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">State</label>
-<input type="text" name="brand" id="brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Product brand" required=""/>
+<input type="text" name="brand" value="Lagos" id="brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Product brand" required=""/>
 </div>
 <div class="w-full">
 <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Country</label>
-<input type="number" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
+<input type="text" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
 </div> 
             </div>
 
           <div className="row">
-            <p>Contact Address</p> <br />
+            <p>Contact Address</p>
+            <div class="flex">
+    <div class="flex items-center me-4">
+        <input id="inline-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+        <label for="inline-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Same as residential</label>
+    </div>
+   
+ 
+</div>
+
+            
+            <br />
           <div class="w-full">
             
                   <label for="brand" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Street</label>
@@ -88,11 +132,11 @@ export default function CreateMembership() {
                   <input type="number" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
               </div> <div class="w-full">
                   <label for="brand" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">State</label>
-                  <input type="text" name="brand" id="brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
+                  <input type="text" name="brand" id="brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"  placeholder="" required=""/>
               </div>
               <div class="w-full">
                   <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Country</label>
-                  <input type="number" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
+                  <input type="text" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" value="Nigeria" placeholder="" required=""/>
               </div>
           </div>
 
@@ -103,15 +147,15 @@ export default function CreateMembership() {
  
   </div>
 <div className='pt-5'>
-<label for="item-weight" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date of birth</label>
-  <input datepicker type="date" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date"/>
+<label for="item-weight" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number 1 </label>
+  <input  type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder=""/>
 </div>
 </div>
 
             
               <div class="w-full pt-5">
                
-                <label for="mobile_number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number (+234)</label>
+                <label for="mobile_number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number 2</label>
                 <input type="email" name="mobile_number" id="mobile_number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
             </div> 
             <div class="w-full">
@@ -153,6 +197,7 @@ export default function CreateMembership() {
                   <label for="brand" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">State</label>
                   <input type="text" name="brand" id="brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
               </div>
+             
               <div class="w-full">
                   <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Country</label>
                   <input type="number" name="price" id="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
@@ -161,33 +206,25 @@ export default function CreateMembership() {
               <br />
 
           <div>
-            <p>Spouse Membership</p>
+          <fieldset className="p-3">
+          <p>Spouse Membership</p>
             <label htmlFor="">
 Christ Castle Parish Member?</label>
             
+<div class="flex">
+    <div class="flex items-center me-4">
+        <input id="inline-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+        <label for="inline-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+    </div>
+    <div class="flex items-center me-4">
+        <input id="inline-2-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+        <label for="inline-2-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+    </div>
+ 
+</div>
 
-<fieldset>
-  <legend class="sr-only">Countries</legend>
-
-  <div class="flex items-center mb-4">
-    <input id="country-option-1" type="radio" name="countries" value="USA" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600" checked/>
-    <label for="country-option-1" class="block ms-2  text-sm font-medium text-gray-900 dark:text-gray-300">
-   Yes
-    </label>
-  </div>
-
-  <div class="flex items-center mb-4">
-    <input id="country-option-2" type="radio" name="countries" value="Germany" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
-    <label for="country-option-2" class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-      No
-    </label>
-  </div>
-
-
-  
-
-  
-</fieldset>
+          </fieldset>
+ 
 
           </div> <br />
           <div class="w-full">
@@ -223,6 +260,15 @@ Christ Castle Parish Member?</label>
 
 <label for="brand" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
 <input type="text" name="brand" id="brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
+            
+<div class="flex">
+    <div class="flex items-center me-4">
+        <input id="inline-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+        <label for="inline-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Same as residential</label>
+    </div>
+ 
+ 
+</div>
 </div>
 
             <div class="w-full">
@@ -247,9 +293,7 @@ Christ Castle Parish Member?</label>
             <button style={{backgroundColor:"black"}} type="submit" class="inline-flex items-center  px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white  rounded-lg">
               Add 
           </button>
-          <button type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-dark bg-primary rounded-lg">
-              Clear
-          </button>
+ 
       </form>
   </div>
 </section>

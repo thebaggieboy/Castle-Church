@@ -14,7 +14,7 @@ export default function AccountType() {
 <section class="bg-white dark:bg-gray-900">
 
     <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">John Doe</label>
-  <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
+  <div class="py-4 px-4 mx-auto max-w-2xl lg:py-16">
       <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white"> </h2>
       <p>Existing expense types</p> <br />
       <div class="flex items-start mb-5">
@@ -61,11 +61,9 @@ export default function AccountType() {
      
             </div> <br />
     
-          <button type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-black rounded-lg">
+      
+            <button style={{backgroundColor:"black"}} type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-black rounded-lg">
               Add 
-          </button>
-          <button type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-dark bg-primary rounded-lg">
-              Clear
           </button>
       </form>
   </div>
