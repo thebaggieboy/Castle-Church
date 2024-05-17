@@ -187,6 +187,35 @@ useEffect(() => {
 </div>
 
 </section>
+
+<section className='flex space-x-4 p-10'>
+   
+
+<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="/membership/operations">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Units</h5>
+    </a>
+    <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">This section is used to manage existing Units within a department.</p> <br />
+    <a href='/operations/units' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+        Manage 
+     
+    </a> <br />
+  <div className="p-2 mt-2">
+  {showOptions !== false ?  <a href='/membership/create/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+       New
+   
+    </a> : ""}
+    {showOptions !== false ?  <a href= "/membership/create/" class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+       Edit
+   
+    </a> : ""} <br />
+    {showOptions !== false ?  <a href= "/membership/create/" class="inline-flex items-center px-3 py-2  mt-2 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+       Delete
+   
+    </a> : ""}
+  </div>
+</div>
+</section>
 </div>
 
     </>

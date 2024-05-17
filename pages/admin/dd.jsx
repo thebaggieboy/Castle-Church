@@ -37,7 +37,7 @@ export default function members() {
     </a>
 </div>
 </section>
-<section className=' space-x-4 p-10'>
+<section className='flex space-x-4 p-10'>
    
 
 

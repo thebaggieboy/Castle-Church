@@ -68,7 +68,10 @@ export default function AccountType() {
         </div>
 
 <br />
-        <button className='bg-black text-white p-3'>Add</button> <br />
+       
+<button style={{backgroundColor:"black"}} type="submit" class="inline-flex items-center  px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white  rounded-lg">
+              Add 
+            </button> <br />
           <button type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-dark bg-primary rounded-lg">
               Clear
           </button>

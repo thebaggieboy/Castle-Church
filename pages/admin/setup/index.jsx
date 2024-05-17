@@ -93,6 +93,20 @@ useEffect(() => {
 
 <div class="p-4 sm:ml-64" >
  
+<section className=' space-x-4 p-10'>
+   
+<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="/admin/user/setup">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">User</h5>
+    </a>
+    <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Setup user permissions and admin roles.</p> <br />
+    <a href="/admin/user/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+        Setup
+    
+    </a>
+</div>
+
+</section>
 
 <section className='flex space-x-4 p-10'>
    
@@ -189,7 +203,40 @@ useEffect(() => {
 </div>
 
 </section>
+
+<section className=' space-x-4 p-10'>
+   
+
+<div style={{backgroundColor:"white"}} class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="/financials/detail/">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Department</h5>
+    </a>
+    <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to add new Department to the database.</p> <br />
+    <a href="/departments/"  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white  bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+        Setup
+      
+    </a> <br />
+    <div className="p-2 mt-2">
+  {showFinanceOptions !== false ?  <a href="/financials/create" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+       New
+   
+    </a> : ""}
+    {showFinanceOptions !== false ?  <a href="/financials/create" class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white  bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+       Edit
+   
+    </a> : ""} <br />
+    {showFinanceOptions !== false ?  <button onClick={showFinanceOptions == false ? showFinance: unShowFinance} class="inline-flex items-center px-3 py-2  mt-2 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+       Delete
+   
+    </button> : ""}
+  </div>
 </div>
+
+</section>
+
+</div>
+
+
 
     </>
   )

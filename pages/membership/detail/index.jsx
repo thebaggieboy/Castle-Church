@@ -131,20 +131,7 @@ useEffect(() => {
 
 <section className='flex space-x-4 p-10'>
    
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/service/create/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">User</h5>
-    </a>
-    <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Setup a new user.</p> <br />
-    <a href="/admin/user/"  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add 
-        
-    </a> <br />
-    <div className="p-2 mt-2">
  
-    
-  </div>
-</div>
 <div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/membership/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Rank</h5>
