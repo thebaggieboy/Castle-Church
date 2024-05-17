@@ -41,10 +41,10 @@ export default function AccountType() {
              
               <button style={{backgroundColor:"black"}} type="submit" class="inline-flex items-center  px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white  rounded-lg">
               Add 
+              </button>
               <button style={{backgroundColor:"blue"}} type="submit" class="inline-flex items-center  px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white  rounded-lg">
               Download 
           </button>
-   
             </div> 
     
     
