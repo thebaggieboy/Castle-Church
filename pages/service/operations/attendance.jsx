@@ -21,58 +21,94 @@ export default function CreateMembership() {
                   <input type="date" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
               </div>
           
-              <div class="w-full">
+              <div class="sm:col-span-2">
                   <label for="brand" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Day of the week</label>
                   <input type="date" name="brand" id="brand" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
               </div>
-              <div class="w-full">
-                  <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Service</label>
-                  <input type="number" name="Other Name" id="Other Name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
+              <div className='sm:col-span-2'>
+                  <label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Service</label>
+                  <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                      <option selected="">Select </option>
+                    
+
+                  </select>
               </div>
-              <div>
+             
+              <div  className='sm:col-span-2'>
                   <label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Service Conductor</label>
                   <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                      <option selected="">Select category</option>
-                      <option value="TV">Married</option>
-                      <option value="PC">Divorced</option>
-                      <option value="GA">Single</option>
-                      <option value="PH">Widow</option>
-                      <option value="PH">Widower</option>
+                      <option selected="">Select </option>
+                       <option value="TV">John Onobote</option>
+                     
                   </select>
+                  <div class="flex">
+    <div class="flex items-center me-4">
+        <input id="inline-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+        <label for="inline-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">External</label>
+    </div>
+ 
+ 
+</div>
+
+       
               </div>
               
-              <div>
+              <div  className='sm:col-span-2'>
 
                
-                  <label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sermoner</label>
+                  <label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Preacher</label>
                   <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                      <option selected="">Select category</option>
-                      <option value="TV">Male</option>
-                      <option value="PC">Female</option>
+                      <option selected="">Select </option>
+                      <option value="TV">Adekunle Adams</option>
+                      
 
                   </select>
+                  <div class="flex">
+    <div class="flex items-center me-4">
+        <input id="inline-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+        <label for="inline-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">External</label>
+    </div>
+ 
+ 
+</div>
+
               </div>  
-              <div>
+              <div class="sm:col-span-2">
                
            
            <label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Service Conductor</label>
            <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-               <option selected="">Select category</option>
-               <option value="TV">Male</option>
-               <option value="PC">Female</option>
+               <option selected="">Select </option>
+               <option value="TV">Henry Olawale</option>
+       
 
            </select>
+           <div class="flex">
+    <div class="flex items-center me-4">
+        <input id="inline-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+        <label for="inline-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">External</label>
+    </div>
+ 
+ 
+</div>
        </div>
               
               <div>
            
-                  <label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sermoner</label>
+                  <label for="category" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Preacher</label>
                   <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                      <option selected="">Select category</option>
-                      <option value="TV">Male</option>
-                      <option value="PC">Female</option>
+                      <option selected="">Select</option>
+           
 
                   </select>
+                  <div class="flex">
+    <div class="flex items-center me-4">
+        <input id="inline-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+        <label for="inline-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">External</label>
+    </div>
+ 
+ 
+</div>
               </div>
               <div class="sm:col-span-2">
                   <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Current group</label>
@@ -82,45 +118,22 @@ export default function CreateMembership() {
            
               
     
-<div class="relative max-w-sm">
-  <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
- 
-  </div>
-<div className='pt-5'>
-<label for="item-weight" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Today</label>
-  <input datepicker type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date"/>
-</div>
-<div className='pt-5'>
 
-  <input datepicker type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date"/>
-</div>
-<div className='pt-5'>
-
-  <input datepicker type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date"/>
-</div>
-
-</div>
+         
 
 
-            
-              <div class="w-full pt-5">
-               
-                <label for="mobile_number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">To Date</label>
-                <input type="email" name="mobile_number" id="mobile_number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
-            </div> 
-            
+        
           
            
           
           </div>
        
  
- 
         
            
     
         
-          <button type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-cente rounded-lg">
+          <button style={{backgroundColor:"black"}} type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white rounded-lg">
               Add
           </button>
       </form>
