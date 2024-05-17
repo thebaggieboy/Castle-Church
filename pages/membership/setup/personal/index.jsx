@@ -270,6 +270,7 @@ Christ Castle Parish Member?</label>
  
 </div>
 </div>
+<br/>
 
             <div class="w-full">
 
@@ -291,9 +292,11 @@ Christ Castle Parish Member?</label>
             </div> <br />
     
             <button style={{backgroundColor:"black"}} type="submit" class="inline-flex items-center  px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white  rounded-lg">
-              Add 
+              Submit 
           </button>
- 
+          <button style={{backgroundColor:"gray"}} type="submit" class="ml-2 inline-flex items-center  px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white  rounded-lg">
+              Clear 
+          </button>
       </form>
   </div>
 </section>
