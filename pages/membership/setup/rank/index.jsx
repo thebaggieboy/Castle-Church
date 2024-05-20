@@ -14,7 +14,7 @@ export default function AccountType() {
 <section class="bg-white dark:bg-gray-900">
   <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
       <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Add a new rank </h2>
-      <p>Existing Ranks</p> <br />
+     
       <div class="flex items-start mb-5">
         <div class="flex items-center h-5">     
           <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
@@ -27,24 +27,18 @@ export default function AccountType() {
        </div>
     <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Female</label>
   </div> 
-  <hr /> <br />
-      <div class="flex items-start mb-5">
-        <div class="flex items-center h-5">     
-          <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
-       </div>
-    <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Superior Evangelist</label>
-  </div>
-  <div class="flex items-start mb-5">
-        <div class="flex items-center h-5">     
-          <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
-       </div>
-    <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Sunday School</label>
-  </div>
+ <br />
+      
       <form action="#">
           <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
           <div class="sm:col-span-2">
                   <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">New Ranks Name</label>
                   <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
+              </div>
+        
+              <div class="sm:col-span-2">
+                  <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">New Ranks Level</label>
+                  <input type="number" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
               </div>
         
              
@@ -54,9 +48,7 @@ export default function AccountType() {
           <button style={{backgroundColor:"black"}} type="submit" class="inline-flex items-center  px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white  rounded-lg">
               Add 
           </button>
-          <button type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-dark bg-primary rounded-lg">
-              Clear
-          </button>
+        
       </form>
   </div>
 </section>

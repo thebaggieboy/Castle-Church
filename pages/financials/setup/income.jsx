@@ -13,32 +13,8 @@ export default function AccountType() {
 
 <section class="bg-white dark:bg-gray-900">
   <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
-      <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Add a new income </h2> 
-      <p>Existing Income Types</p> <br />
-      <div class="flex items-start mb-5">
-        <div class="flex items-center h-5">     
-          <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
-       </div>
-    <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Travelling fund</label>
-  </div>
-  <div class="flex items-start mb-5">
-        <div class="flex items-center h-5">     
-          <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
-       </div>
-    <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Building fund</label>
-  </div>
-  <div class="flex items-start mb-5">
-        <div class="flex items-center h-5">     
-          <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
-       </div>
-    <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Special building fund</label>
-  </div>
-  <div class="flex items-start mb-5">
-        <div class="flex items-center h-5">     
-          <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
-       </div>
-    <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Tithe</label>
-  </div> <br />
+      <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Setup a new Income </h2> 
+   
       <form action="#">
           <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
 

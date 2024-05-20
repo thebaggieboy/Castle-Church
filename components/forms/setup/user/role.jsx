@@ -4,7 +4,7 @@ export default function UserRole() {
   return (
     <>
     <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
-      <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Add a new user</h2>
+      <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Add a new Role</h2>
       <form action="#">
           <div class="grid gap-4  sm:gap-6">
           <div class="w-full">
@@ -237,11 +237,9 @@ export default function UserRole() {
 
            
           <button type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-black rounded-lg">
-              Add member
+              Add 
           </button>
-          <button type="submit" class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-dark bg-primary rounded-lg">
-              Clear
-          </button>
+        
       </form>
   </div>
     

@@ -141,7 +141,7 @@ useEffect(() => {
     </a>
     <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to add a new Service to the database.</p> <br />
     <button onClick={showServiceOptions == false ? showService : unShowService}  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add
+        Continue
        
     </button> <br />
     <div className="p-2 mt-2">
@@ -167,7 +167,7 @@ useEffect(() => {
     </a>
     <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">This section is used to setup a new Bank to the database.</p> <br />
     <button onClick={showOptions == false ? show : unShow} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add 
+        Continue 
        
     </button> <br />
   <div className="p-2 mt-2">
@@ -191,7 +191,7 @@ useEffect(() => {
     </a>
     <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to setup a new Loan Account to the database.</p> <br />
     <button onClick={showEventsOptions == false ? showEvents : unShowEvents}  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add 
+        Continue 
        
     </button> <br />
     <div className="p-2 mt-2">
@@ -220,7 +220,7 @@ useEffect(() => {
     </a>
     <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">This section is used to add a new Account type to the database.</p> <br />
     <button onClick={showBudgetOptions == false ? showBudget : unShowBudget} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add 
+        Continue 
        
     </button> <br />
   <div className="p-2 mt-2">
@@ -243,7 +243,7 @@ useEffect(() => {
     </a>
     <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">This section is used to setup a new Expenditure to the database.</p> <br />
     <button onClick={showBankOptions == false ? showBank : unShowBank} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add 
+        Continue 
        
     </button> <br />
   <div className="p-2 mt-2">
@@ -266,7 +266,7 @@ useEffect(() => {
     </a>
     <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">This section is used to setup a new Budget to the database.</p> <br />
     <button onClick={showFinanceOptions == false ? showFinance : unShowFinance} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add 
+        Continue 
        
     </button> <br />
   <div className="p-2 mt-2">
@@ -294,7 +294,7 @@ useEffect(() => {
     </a>
     <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to add a new Income to the database.</p> <br />
     <button onClick={showServiceOptions == false ? showService : unShowService}  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add
+        Continue
        
     </button> <br />
     <div className="p-2 mt-2">
