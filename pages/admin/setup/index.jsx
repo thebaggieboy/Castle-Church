@@ -87,9 +87,6 @@ useEffect(() => {
   return (
     <>
     
-  
- 
-
 
 <div class="p-4 sm:ml-64" >
  
@@ -108,7 +105,7 @@ useEffect(() => {
 
 </section>
 
-<section className='flex space-x-4 p-10'>
+<section className='flex flex-wrap space-x-4 p-10'>
    
 
 <div style={{backgroundColor:"white"}} class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -134,7 +131,7 @@ useEffect(() => {
    
     </a> : ""}
   </div>
-</div>
+</div> <br />
 <div style={{backgroundColor:"white"}} class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/service/detail/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Service</h5>
@@ -144,13 +141,11 @@ useEffect(() => {
         Setup 
       
     </a> <br />
-    <div className="p-2 mt-2">
- 
-  </div>
+   
 </div>
 
 </section>
-<section className='flex space-x-4 p-10'>
+<section className='flex flex-wrap space-x-4 p-10'>
    
 
 <div style={{backgroundColor:"white"}} class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -176,7 +171,7 @@ useEffect(() => {
    
     </button> : ""}
   </div>
-</div>
+</div> <br />
 <div style={{backgroundColor:"white"}} class="max-w-sm p-4 text-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/events/detail/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Events</h5>
@@ -204,7 +199,7 @@ useEffect(() => {
 
 </section>
 
-<section className=' space-x-4 p-10'>
+<section className='flex flex-wrap space-x-4 p-10'>
    
 
 <div style={{backgroundColor:"white"}} class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

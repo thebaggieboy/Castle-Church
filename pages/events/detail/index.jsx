@@ -99,7 +99,7 @@ useEffect(() => {
 <div class="p-4 sm:ml-64" >
  
 
-<section className='flex space-x-4 p-10'>
+<section className='flex flex-wrap space-x-4 p-10'>
 
 <div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/membership/create/">
@@ -151,7 +151,7 @@ useEffect(() => {
 </div>
 
 </section>
-<section className='flex space-x-4 p-10'>
+<section className='flex flex-wrap space-x-4 p-10'>
    
 
 <div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

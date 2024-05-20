@@ -13,10 +13,10 @@ export default function members() {
 <div class="p-4 sm:ml-64" >
  
 
-<section className='flex space-x-4 p-10'>
+<section className='flex flex-wrap space-x-4 space-y-4 p-10'>
    
 
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div style={{backgroundColor:"white"}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/admin/setup">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white">Setup</h5>
     </a>
@@ -26,7 +26,7 @@ export default function members() {
     
     </a>
 </div>
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div style={{backgroundColor:"white"}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/backup/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Backup</h5>
     </a>
@@ -36,12 +36,8 @@ export default function members() {
     
     </a>
 </div>
-</section>
-<section className=' space-x-4 p-10'>
-   
 
-
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 text-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div style={{backgroundColor:"white"}} class="max-w p-6 text-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/events/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Security</h5>
     </a>
@@ -51,8 +47,9 @@ export default function members() {
       
     </a>
 </div>
-
 </section>
+
+
 </div>
 
     </>
