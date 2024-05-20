@@ -42,7 +42,7 @@ export default function NavBar() {
       <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
       
-    <div className="isolate bg-yellow-50">
+    <div className="isolate bg-black text-white">
       <div className="absolute inset-x-0 top-[-10rem] transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
       
       </div>
@@ -57,7 +57,7 @@ export default function NavBar() {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
@@ -72,7 +72,7 @@ export default function NavBar() {
   
       <div>
         
-        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1">
+        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold  text-white shadow-sm ring-1">
           Admin
           <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
         </Menu.Button>
@@ -87,13 +87,13 @@ export default function NavBar() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
                 <a
                   href="/admin/setup/"
-                  className={ active ? 'bg-gray-100 text-gray-900' : 'text-gray-700','block px-4 py-2 text-sm' }
+                  className={ active ? 'bg-gray-100  text-black' : 'text-black','block px-4 py-2 text-sm' }
                 >
                   Setup
                 </a>
@@ -104,7 +104,7 @@ export default function NavBar() {
                 <a
                   href="/backup/"
                   className={
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                    active ? 'bg-gray-100  text-black' : 'text-black',
                     'block px-4 py-2 text-sm'
                }
                 >
@@ -117,7 +117,7 @@ export default function NavBar() {
                 <a
                   href="#"
                   className={
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                    active ? 'bg-gray-100  text-white' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   }
                 >
@@ -132,12 +132,12 @@ export default function NavBar() {
 
       
     </Menu>
-    <Menu as="div" className="relative inline-block text-left">
+    <Menu as="div" className="relative inline-block  text-left">
 
       
   
       <div>
-        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1">
+        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold  text-white shadow-sm ring-1">
           Operations
           <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
         </Menu.Button>
@@ -152,13 +152,13 @@ export default function NavBar() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
                 <a
                   href="/operations/membership/"
-                  className={ active ? 'bg-gray-100 text-gray-900' : 'text-gray-700','block px-4 py-2 text-sm' }
+                  className={ active ? 'bg-gray-100  text-white' : 'text-gray-700','block px-4 py-2 text-sm' }
                 >
                   Membership
                 </a>
@@ -169,7 +169,7 @@ export default function NavBar() {
                 <a
                   href="/service/operations/"
                   className={
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                    active ? 'bg-gray-100  text-white' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                }
                 >
@@ -182,7 +182,7 @@ export default function NavBar() {
                 <a
                   href="/financials/operations/"
                   className={
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                    active ? 'bg-gray-100  text-white' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   }
                 >
@@ -195,7 +195,7 @@ export default function NavBar() {
                 <a
                   href="/docuement_management/operations/"
                   className={
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                    active ? 'bg-gray-100  text-white' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   }
                 >
@@ -208,7 +208,7 @@ export default function NavBar() {
                 <a
                   href="/operations/units/"
                   className={
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                    active ? 'bg-gray-100  text-white' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                   }
                 >
@@ -228,7 +228,7 @@ export default function NavBar() {
       
   
       <div>
-        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1">
+        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold  text-white shadow-sm ring-1">
           Reports
           <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
         </Menu.Button>
@@ -243,13 +243,13 @@ export default function NavBar() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
                 <a
                   href="/reports/individual/"
-                  className={ active ? 'bg-gray-100 text-gray-900' : 'text-gray-700','block px-4 py-2 text-sm' }
+                  className={ active ? 'bg-gray-100  text-white' : 'text-gray-700','block px-4 py-2 text-sm' }
                 >
                   Individual
                 </a>
@@ -260,7 +260,7 @@ export default function NavBar() {
                 <a
                   href="/reports/selected_reports/"
                   className={
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                    active ? 'bg-gray-100  text-white' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
                }
                 >
@@ -280,7 +280,7 @@ export default function NavBar() {
       
   
 <div>
-  <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1">
+  <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold  text-white shadow-sm ring-1">
     Import
     <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
   </Menu.Button>
@@ -295,13 +295,13 @@ export default function NavBar() {
   leaveFrom="transform opacity-100 scale-100"
   leaveTo="transform opacity-0 scale-95"
 >
-  <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+  <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
     <div className="py-1">
       <Menu.Item>
         {({ active }) => (
           <a
             href="/import/detail/"
-            className={ active ? 'bg-gray-100 text-gray-900' : 'text-gray-700','block px-4 py-2 text-sm' }
+            className={ active ? 'bg-gray-100  text-white' : 'text-gray-700','block px-4 py-2 text-sm' }
           >
             Setup
           </a>
@@ -312,7 +312,7 @@ export default function NavBar() {
           <a
             href="/import/operations/detail/"
             className={
-              active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+              active ? 'bg-gray-100  text-white' : 'text-gray-700',
               'block px-4 py-2 text-sm'
          }
           >
@@ -325,7 +325,7 @@ export default function NavBar() {
           <a
             href="/import/finance/detail/"
             className={
-              active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+              active ? 'bg-gray-100  text-white' : 'text-gray-700',
               'block px-4 py-2 text-sm'
             }
           >
@@ -338,7 +338,7 @@ export default function NavBar() {
           <a
             href="/import/attendance/"
             className={
-              active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+              active ? 'bg-gray-100  text-white' : 'text-gray-700',
               'block px-4 py-2 text-sm'
             }
           >
@@ -350,7 +350,7 @@ export default function NavBar() {
           <a
             href="/import/templates/"
             className={
-              active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+              active ? 'bg-gray-100  text-white' : 'text-gray-700',
               'block px-4 py-2 text-sm'
             }
           >
@@ -367,7 +367,7 @@ export default function NavBar() {
 </Menu>
 
 <div>
-  <a href="#" className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-gray-900">
+  <a href="#" className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold  text-white">
     Help
     
   </a>
@@ -381,16 +381,18 @@ export default function NavBar() {
 
           
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="/accounts/signup" className="text-sm font-semibold leading-6 text-gray-900">
+            <a href="/accounts/signup" className="text-sm font-semibold leading-6  text-white">
               Signup 
             </a>
-            <a href="/accounts/login" className="ml-10 text-sm font-semibold leading-6 text-gray-900">
+            <a href="/accounts/login" className="ml-10 text-sm font-semibold leading-6  text-white">
               Login 
             </a>
           </div>
         </nav>
+
+
         <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-          <Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
+          <Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto bg-black text-white px-6 py-6 lg:hidden">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="">CASTLE</span>
@@ -408,15 +410,306 @@ export default function NavBar() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"
-                    >
-                      {item.name}
-                    </a>
-                  ))}
+                <Menu as="div" className="relative inline-block text-left">
+
+      
+  
+<div>
+  <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold  text-white shadow-sm ring-1">
+    Operations
+    <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
+  </Menu.Button>
+</div>
+
+<Transition
+  as={Fragment}
+  enter="transition ease-out duration-100"
+  enterFrom="transform opacity-0 scale-95"
+  enterTo="transform opacity-100 scale-100"
+  leave="transition ease-in duration-75"
+  leaveFrom="transform opacity-100 scale-100"
+  leaveTo="transform opacity-0 scale-95"
+>
+  <Menu.Items className="absolute right-0 z-10 mt-2 w-24 origin-top-right rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+    <div className="py-1">
+      <Menu.Item>
+        {({ active }) => (
+          <a
+            href="/admin/setup/"
+            className={ active ? 'bg-gray-100  text-white' : 'text-gray-700','block px-4 py-2 text-sm' }
+          >
+            Setup
+          </a>
+        )}
+      </Menu.Item>
+      <Menu.Item>
+        {({ active }) => (
+          <a
+            href="/backup/"
+            className={
+              active ? 'bg-gray-100  text-white' : 'text-gray-700',
+              'block px-4 py-2 text-sm'
+         }
+          >
+            Backup
+          </a>
+        )}
+      </Menu.Item>
+      <Menu.Item>
+        {({ active }) => (
+          <a
+            href="#"
+            className={
+              active ? 'bg-gray-100  text-white' : 'text-gray-700',
+              'block px-4 py-2 text-sm'
+            }
+          >
+            Securtity
+          </a>
+        )}
+      </Menu.Item>
+    
+    
+  
+    </div>
+  </Menu.Items>
+</Transition>
+
+
+</Menu>
+    <Menu as="div" className="relative inline-block text-left">
+
+      
+  
+      <div>
+        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold  text-white shadow-sm ring-1">
+          Operations
+          <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
+        </Menu.Button>
+      </div>
+
+      <Transition
+        as={Fragment}
+        enter="transition ease-out duration-100"
+        enterFrom="transform opacity-0 scale-95"
+        enterTo="transform opacity-100 scale-100"
+        leave="transition ease-in duration-75"
+        leaveFrom="transform opacity-100 scale-100"
+        leaveTo="transform opacity-0 scale-95"
+      >
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <div className="py-1">
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  href="/operations/membership/"
+                  className={ active ? 'bg-gray-100  text-white' : 'text-gray-700','block px-4 py-2 text-sm' }
+                >
+                  Membership
+                </a>
+              )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  href="/service/operations/"
+                  className={
+                    active ? 'bg-gray-100  text-white' : 'text-gray-700',
+                    'block px-4 py-2 text-sm'
+               }
+                >
+                  Service
+                </a>
+              )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  href="/financials/operations/"
+                  className={
+                    active ? 'bg-gray-100  text-white' : 'text-gray-700',
+                    'block px-4 py-2 text-sm'
+                  }
+                >
+                  Financials
+                </a>
+              )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  href="/docuement_management/operations/"
+                  className={
+                    active ? 'bg-gray-100  text-white' : 'text-gray-700',
+                    'block px-4 py-2 text-sm'
+                  }
+                >
+                  Document Management
+                </a>
+              )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  href="/operations/units/"
+                  className={
+                    active ? 'bg-gray-100  text-white' : 'text-gray-700',
+                    'block px-4 py-2 text-sm'
+                  }
+                >
+                  Units
+                </a>
+              )}
+            </Menu.Item>
+        
+          </div>
+        </Menu.Items>
+      </Transition>
+
+      
+    </Menu>
+    <Menu as="div" className="relative inline-block text-left">
+
+      
+  
+      <div>
+        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold  text-white shadow-sm ring-1">
+          Reports
+          <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
+        </Menu.Button>
+      </div>
+
+      <Transition
+        as={Fragment}
+        enter="transition ease-out duration-100"
+        enterFrom="transform opacity-0 scale-95"
+        enterTo="transform opacity-100 scale-100"
+        leave="transition ease-in duration-75"
+        leaveFrom="transform opacity-100 scale-100"
+        leaveTo="transform opacity-0 scale-95"
+      >
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <div className="py-1">
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  href="/reports/individual/"
+                  className={ active ? 'bg-gray-100  text-white' : 'text-gray-700','block px-4 py-2 text-sm' }
+                >
+                  Individual
+                </a>
+              )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  href="/reports/selected_reports/"
+                  className={
+                    active ? 'bg-gray-100  text-white' : 'text-gray-700',
+                    'block px-4 py-2 text-sm'
+               }
+                >
+                  Selected Reports
+                </a>
+              )}
+            </Menu.Item>
+         
+        
+          </div>
+        </Menu.Items>
+      </Transition>
+
+      
+    </Menu><Menu as="div" className="relative inline-block text-left">
+
+      
+  
+<div>
+  <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold  text-white shadow-sm ring-1">
+    Import
+    <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
+  </Menu.Button>
+</div>
+
+<Transition
+  as={Fragment}
+  enter="transition ease-out duration-100"
+  enterFrom="transform opacity-0 scale-95"
+  enterTo="transform opacity-100 scale-100"
+  leave="transition ease-in duration-75"
+  leaveFrom="transform opacity-100 scale-100"
+  leaveTo="transform opacity-0 scale-95"
+>
+  <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right text-white rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+    <div className="py-1">
+      <Menu.Item>
+        {({ active }) => (
+          <a
+            href="/import/detail/"
+            className={ active ? 'bg-gray-100  text-white' : 'text-gray-700','block px-4 py-2 text-sm' }
+          >
+            Setup
+          </a>
+        )}
+      </Menu.Item>
+      <Menu.Item>
+        {({ active }) => (
+          <a
+            href="/import/operations/detail/"
+            className={
+              active ? 'bg-gray-100  text-white' : 'text-gray-700',
+              'block px-4 py-2 text-sm'
+         }
+          >
+            Operations
+          </a>
+        )}
+      </Menu.Item>
+      <Menu.Item>
+        {({ active }) => (
+          <a
+            href="/import/finance/detail/"
+            className={
+              active ? 'bg-gray-100  text-white' : 'text-gray-700',
+              'block px-4 py-2 text-sm'
+            }
+          >
+            Finance
+          </a>
+        )}
+      </Menu.Item>
+      <Menu.Item>
+        {({ active }) => (
+          <a
+            href="/import/attendance/"
+            className={
+              active ? 'bg-gray-100  text-white' : 'text-gray-700',
+              'block px-4 py-2 text-sm'
+            }
+          >
+            Attendance
+          </a>
+        )}
+      </Menu.Item>  <Menu.Item>
+        {({ active }) => (
+          <a
+            href="/import/templates/"
+            className={
+              active ? 'bg-gray-100  text-white' : 'text-gray-700',
+              'block px-4 py-2 text-sm'
+            }
+          >
+            Templates
+          </a>
+        )}
+      </Menu.Item>
+  
+    </div>
+  </Menu.Items>
+</Transition>
+
+
+</Menu>
                 </div>
              
               </div>
