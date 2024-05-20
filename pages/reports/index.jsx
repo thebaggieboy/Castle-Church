@@ -109,7 +109,7 @@ useEffect(() => {
     </a>
     <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to prepare individual reports.</p> <br />
     <button onClick={showServiceOptions == false ? showService : unShowService}  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add 
+        Continue 
      
     </button> <br />
     <div className="p-2 mt-2">
@@ -130,7 +130,7 @@ useEffect(() => {
     </a>
     <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">This section is used to query reports based on filters.</p> <br />
     <button onClick={showOptions == false ? show : unShow} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add 
+        Continue 
      
     </button> <br />
   <div className="p-2 mt-2">

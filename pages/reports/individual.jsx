@@ -32,10 +32,9 @@ export default function AccountType() {
               </div>
 <br />
 
-              <button style={{backgroundColor:'black'}} type="submit" class=" items-center  px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-black rounded-lg">
-              Report 
+<button style={{backgroundColor:"black"}} type="submit" class="inline-flex items-center  px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white  rounded-lg">
+              Add 
           </button>
-         
 
    
             </div> 

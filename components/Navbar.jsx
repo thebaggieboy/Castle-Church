@@ -71,6 +71,7 @@ export default function NavBar() {
       
   
       <div>
+        
         <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1">
           Admin
           <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
@@ -91,7 +92,7 @@ export default function NavBar() {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="/admin/setup/"
                   className={ active ? 'bg-gray-100 text-gray-900' : 'text-gray-700','block px-4 py-2 text-sm' }
                 >
                   Setup
@@ -101,7 +102,7 @@ export default function NavBar() {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="/backup/"
                   className={
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
@@ -156,7 +157,7 @@ export default function NavBar() {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="/operations/membership/"
                   className={ active ? 'bg-gray-100 text-gray-900' : 'text-gray-700','block px-4 py-2 text-sm' }
                 >
                   Membership
@@ -166,7 +167,7 @@ export default function NavBar() {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="/service/operations/"
                   className={
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
@@ -179,7 +180,7 @@ export default function NavBar() {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="/financials/operations/"
                   className={
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
@@ -192,7 +193,7 @@ export default function NavBar() {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="/docuement_management/operations/"
                   className={
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
@@ -205,7 +206,7 @@ export default function NavBar() {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="/operations/units/"
                   className={
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
@@ -247,7 +248,7 @@ export default function NavBar() {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="/reports/individual/"
                   className={ active ? 'bg-gray-100 text-gray-900' : 'text-gray-700','block px-4 py-2 text-sm' }
                 >
                   Individual
@@ -257,7 +258,7 @@ export default function NavBar() {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
+                  href="/reports/selected_reports/"
                   className={
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
@@ -299,7 +300,7 @@ export default function NavBar() {
       <Menu.Item>
         {({ active }) => (
           <a
-            href="#"
+            href="/import/detail/"
             className={ active ? 'bg-gray-100 text-gray-900' : 'text-gray-700','block px-4 py-2 text-sm' }
           >
             Setup
@@ -309,7 +310,7 @@ export default function NavBar() {
       <Menu.Item>
         {({ active }) => (
           <a
-            href="#"
+            href="/import/operations/detail/"
             className={
               active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
               'block px-4 py-2 text-sm'
@@ -322,7 +323,7 @@ export default function NavBar() {
       <Menu.Item>
         {({ active }) => (
           <a
-            href="#"
+            href="/import/finance/detail/"
             className={
               active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
               'block px-4 py-2 text-sm'
@@ -335,7 +336,7 @@ export default function NavBar() {
       <Menu.Item>
         {({ active }) => (
           <a
-            href="#"
+            href="/import/attendance/"
             className={
               active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
               'block px-4 py-2 text-sm'
@@ -347,7 +348,7 @@ export default function NavBar() {
       </Menu.Item>  <Menu.Item>
         {({ active }) => (
           <a
-            href="#"
+            href="/import/templates/"
             className={
               active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
               'block px-4 py-2 text-sm'
