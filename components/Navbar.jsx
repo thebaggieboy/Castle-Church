@@ -416,7 +416,7 @@ export default function NavBar() {
   
 <div>
   <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold  text-white shadow-sm ring-1">
-    Operations
+    Admin
     <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
   </Menu.Button>
 </div>
@@ -476,7 +476,7 @@ export default function NavBar() {
 </Transition>
 
 
-</Menu>
+</Menu> <br />
     <Menu as="div" className="relative inline-block text-left">
 
       
@@ -567,7 +567,7 @@ export default function NavBar() {
       </Transition>
 
       
-    </Menu>
+    </Menu> <br />
     <Menu as="div" className="relative inline-block text-left">
 
       
@@ -620,7 +620,9 @@ export default function NavBar() {
       </Transition>
 
       
-    </Menu><Menu as="div" className="relative inline-block text-left">
+    </Menu>
+    <br />
+    <Menu as="div" className="relative inline-block text-left">
 
       
   
@@ -640,7 +642,7 @@ export default function NavBar() {
   leaveFrom="transform opacity-100 scale-100"
   leaveTo="transform opacity-0 scale-95"
 >
-  <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right text-white rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+  <Menu.Items className="absolute right-0 z-10 mt-2 w-24 origin-top-right text-white rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
     <div className="py-1">
       <Menu.Item>
         {({ active }) => (
