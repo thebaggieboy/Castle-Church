@@ -190,10 +190,6 @@ useEffect(() => {
     </a> : ""} 
   </div>
 </div> <br />
-
-</section>
-
-<section className='flex flex-wrap space-x-4 space-y-4 p-5'>
    
 <div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/membership/create/">
@@ -214,7 +210,8 @@ useEffect(() => {
    
     </a> : ""}
   </div>
-</div><div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+</div> <br />
+<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/membership/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Anointment</h5>
     </a>
@@ -233,7 +230,8 @@ useEffect(() => {
    
     </a> : ""} 
   </div>
-</div><div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+</div> <br />
+<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/membership/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Group</h5>
     </a>
@@ -256,6 +254,8 @@ useEffect(() => {
 </div>
 
 </section>
+
+
 </div>
 
     </>

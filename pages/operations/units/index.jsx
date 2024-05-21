@@ -13,7 +13,7 @@ export default function members() {
 <div class="p-4 sm:ml-64" >
  
 
-<section className='flex space-x-4 p-10'>
+<section className='flex flex-wrap space-x-4 p-10'>
    
 
 <div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -25,8 +25,10 @@ export default function members() {
         Start 
     
     </a>
-</div>
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+</div> 
+
+
+<div style={{backgroundColor:"white"}} class="max-w-sm p-6 mt-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/backup/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Unit Head</h5>
     </a>

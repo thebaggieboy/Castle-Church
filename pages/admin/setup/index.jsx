@@ -102,12 +102,7 @@ useEffect(() => {
     
     </a>
 </div>
-
-</section>
-
-<section className='flex flex-wrap space-x-4 p-10'>
-   
-
+<br />
 <div style={{backgroundColor:"white"}} class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/membership/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Membership</h5>
@@ -142,11 +137,7 @@ useEffect(() => {
       
     </a> <br />
    
-</div>
-
-</section>
-<section className='flex flex-wrap space-x-4 p-10'>
-   
+</div> <br />
 
 <div style={{backgroundColor:"white"}} class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/financials/detail/">
@@ -195,12 +186,7 @@ useEffect(() => {
    
     </a> : ""}
   </div>
-</div>
-
-</section>
-
-<section className='flex flex-wrap space-x-4 p-10'>
-   
+</div> <br />
 
 <div style={{backgroundColor:"white"}} class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/financials/detail/">
@@ -226,8 +212,10 @@ useEffect(() => {
     </button> : ""}
   </div>
 </div>
-
 </section>
+
+
+
 
 </div>
 

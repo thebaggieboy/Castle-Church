@@ -153,7 +153,7 @@ useEffect(() => {
     </a> : ""} <br />
     
   </div>
-</div>
+</div> <br />
 <div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/membership/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bank</h5>
@@ -177,7 +177,7 @@ useEffect(() => {
    
     </a> : ""}
   </div>
-</div>
+</div> <br />
 <div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/service/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Loan Account</h5>
@@ -202,11 +202,6 @@ useEffect(() => {
     </a> : ""}
   </div>
 </div> <br />
-
-</section>
-
-<section className='flex flex-wrap space-x-4 p-10'>
-   
 <div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/membership/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Account Type</h5>
@@ -230,7 +225,8 @@ useEffect(() => {
    
     </a> : ""}
   </div>
-</div><div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+</div> <br />
+<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/membership/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Expenditure</h5>
     </a>
@@ -253,7 +249,8 @@ useEffect(() => {
    
     </a> : ""}
   </div>
-</div><div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+</div> <br />
+<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/membership/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Budget</h5>
     </a>
@@ -276,12 +273,7 @@ useEffect(() => {
    
     </a> : ""}
   </div>
-</div>
-
-</section> <br />
-
-<section className=' flex flex-wrap space-x-4 p-10'>
-   
+</div> <br />
 <div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="/service/create/">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Income</h5>
@@ -309,6 +301,9 @@ useEffect(() => {
   </div>
 </div>
 </section>
+
+
+
 </div>
 
     </>
