@@ -20,7 +20,7 @@ export default function Home() {
      
         </div>
         <div style={{ maxWidth:"fit-content", marginInline:"auto" }}>
-        <img src="/images/building.png" className="pt-2" style={{height:210}}/>
+        <img src="/images/building.png" className="mt-5" style={{height:160}}/>
         </div>
     </div>
    
