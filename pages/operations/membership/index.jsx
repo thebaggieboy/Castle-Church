@@ -137,7 +137,7 @@ useEffect(() => {
         </Tabs.Item>
         <Tabs.Item title="Births" icon={MdDashboard}>
     <div className="p-10 text-center">
-    <h class="mb-3 font-normal text-black text-xs dark:text-gray-400">This section is used to manage births .</h> <br />
+    <h1 class="mb-3 font-normal text-black  dark:text-gray-400">This section is used to manage births .</h1> <br />
       <a href='/membership/setup/births' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
           Setup 
         
@@ -146,7 +146,7 @@ useEffect(() => {
         </Tabs.Item>
         <Tabs.Item title="Death" icon={HiAdjustments}>
          <div className="p-10 text-center">
-         <h1 class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to manage an existing Service in the database.</h1> <br />
+         <h1 class="mb-3 font-normal  text-black dark:text-gray-400">This section is used to manage an existing Service in the database.</h1> <br />
       <a href='/membership/setup/death'  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
           Setup 
         

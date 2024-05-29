@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import React, {useEffect, useState} from 'react'
+import { Tabs } from "flowbite-react";
+import { HiAdjustments, HiClipboardList, HiUserCircle } from "react-icons/hi";
+import { MdDashboard } from "react-icons/md";
+
 
 
 
@@ -87,122 +91,54 @@ useEffect(() => {
   return (
     <>
     
+    <Tabs aria-label="Tabs with icons" style="underline">
+        <Tabs.Item active title="Personal" icon={HiUserCircle}>
+        <div className='p-10 text-center'>
+        <h1>This tab is for setting up new ranks and adding them to the database.</h1> <br />
+        <a href="/import/operations/personal" class="inline-flex items-center px-3 p-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+         Continue
+      
+      </a>
+        </div>
+        </Tabs.Item>
   
+        <Tabs.Item active title="Birth" icon={HiUserCircle}>
+        <div className='p-10 text-center'>
+        <h1>This section is used to add new user roles into the database.</h1> <br />
+        <a href="/import/operations/birth" class="inline-flex items-center px-3 p-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+         Continue
+      
+      </a>
+        </div>
+        </Tabs.Item>
+  
+        <Tabs.Item active title="Marriage" icon={HiUserCircle}>
+        <div className='p-10 text-center'>
+        <h1>This section is used to add a new user marital status into the database.</h1> <br />
+        <a href="/import/operations/marriage/" class="inline-flex items-center px-3 p-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+         Continue
+      
+      </a>
+        </div>
+        </Tabs.Item>
+        <Tabs.Item active title="Death" icon={HiUserCircle}>
+        <div className='p-10 text-center'>
+        <h1>This section is used to add a new occupation into the database.</h1> <br />
+        <a href="/import/operations/death" class="inline-flex items-center px-3 p-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+         Continue
+      
+      </a>
+        </div>
+        </Tabs.Item>
+  
+
+      </Tabs>
 
 
 <div class="p-4 sm:ml-64" >
  
  
-<section className='flex flex-wrap space-x-4 p-10'>
-   
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 text-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/events/detail/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Personal</h5>
-    </a>
-    <p class="mb-3 font-normal text-black dark:text-gray-400">This section is used to add a new Event to the database.</p> <br />
-    <a href="/import/operations/personal" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Import
-      
-    </a> <br />
-    <div className="p-2 mt-2">
-  {showEventsOptions !== false ?  <a href='/import/operations/personal/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       New
-   
-    </a> : ""}
-    {showEventsOptions !== false ?  <a href='/import/setup/rank/' class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Edit
-   
-    </a> : ""} <br />
-    {showEventsOptions !== false ?  <a href='/import/setup/rank/' class="inline-flex items-center px-3 py-2  mt-2 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Delete
-   
-    </a> : ""}
-  </div>
-</div>
-<br/>
 
-
-   
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 text-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/import/setup/group/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Births</h5>
-    </a>
-    <p class="mb-3 font-normal text-black dark:text-gray-400">This section is used to add a new Event to the database.</p> <br />
-    <a href="/import/operations/birth" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Import
-      
-    </a> <br />
-    <div className="p-2 mt-2">
-  {showOptions !== false ?  <a href='/import/operations/birth/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       New
-   
-    </a> : ""}
-    {showOptions !== false ?  <a href='/import/operations/birth/' class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Edit
-   
-    </a> : ""} <br />
-    {showOptions !== false ?  <a href='/import/setup/group/' class="inline-flex items-center px-3 py-2  mt-2 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Delete
-   
-    </a> : ""}
-  </div>
-</div>
-<br />
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 text-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/import/setup/service/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Marriage</h5>
-    </a>
-    <p class="mb-3 font-normal text-black dark:text-gray-400">This section is used to add a new Event to the database.</p> <br />
-    <a href="/import/operations/marriage" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Import
-      
-    </a> <br />
-    <div className="p-2 mt-2">
-  {showFinanceOptions !== false ?  <a href='/import/operations/marriage/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       New
-   
-    </a> : ""}
-    {showFinanceOptions !== false ?  <a href='/import/operations/marriage/' class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Edit
-   
-    </a> : ""} <br />
-    {showFinanceOptions !== false ?  <a href='/import/operations/marriage/' class="inline-flex items-center px-3 py-2  mt-2 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Delete
-   
-    </a> : ""}
-  </div>
-</div>
-<br />
-
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 text-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/import/setup/group/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Death</h5>
-    </a>
-    <p class="mb-3 font-normal text-black dark:text-gray-400">This section is used to add a new Event to the database.</p> <br />
-    <a href="/import/operations/birth" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Import
-      
-    </a> <br />
-    <div className="p-2 mt-2">
-  {showEventsOptions !== false ?  <a href='/import/operations/birth/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       New
-   
-    </a> : ""}
-    {showEventsOptions !== false ?  <a href='/import/operations/birth/' class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Edit
-   
-    </a> : ""} <br />
-    {showEventsOptions !== false ?  <a href='/import/setup/group/' class="inline-flex items-center px-3 py-2  mt-2 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Delete
-   
-    </a> : ""}
-  </div>
-</div>
-
- 
- 
-
-</section>
 </div>
 
 

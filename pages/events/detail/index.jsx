@@ -4,6 +4,10 @@ import React, {useEffect, useState} from 'react'
 
 
 
+import { Tabs } from "flowbite-react";
+import { HiAdjustments, HiClipboardList, HiUserCircle } from "react-icons/hi";
+import { MdDashboard } from "react-icons/md";
+
 const options = {
    new:"",
    edit:"",
@@ -87,88 +91,50 @@ useEffect(() => {
   return (
     <>
     
+    <div className='p-5 text-center' >
+      
+      <Tabs aria-label="Tabs with icons" style="underline">
+        <Tabs.Item active title="Event Name" icon={HiUserCircle}>
+        <div className='p-10 text-center'>
+        <h1>This section is used to add a new Event name to the database.</h1> <br />
+        <a href="/events/setup/event_name/" class="inline-flex items-center px-3 p-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+          Setup
+      
+      </a>
+        </div>
+        </Tabs.Item>
+     
+        <Tabs.Item active title="Formation" icon={HiUserCircle}>
+        <div className='p-10 text-center'>
+        <h1>This section is used to add a new Formation to the database.</h1> <br />
+        <a href="/events/setup/formation/" class="inline-flex items-center px-3 p-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+          Setup
+      
+      </a>
+        </div>
+        </Tabs.Item>
+     
+        <Tabs.Item active title="Committee" icon={HiUserCircle}>
+        <div className='p-10 text-center'>
+        <h1>This section is used to add a new Committee to the database.</h1> <br />
+        <a href="/events/setup/committee/" class="inline-flex items-center px-3 p-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+          Setup
+      
+      </a>
+        </div>
+        </Tabs.Item>
+   
+       
+      </Tabs>
+  
+      </div>
   
     
 
 <div class="p-4 sm:ml-64" >
  
 
-<section className='flex flex-wrap space-x-4 p-10'>
 
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/membership/create/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Event Name</h5>
-    </a>
-    <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">This section is used to add Event Name to the database.</p> <br />
-    <button onClick={showOptions == false ? show : unShow} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add
-       
-    </button> <br />
-  <div className="p-2 mt-2">
-  {showOptions !== false ?  <a href='/events/setup/event_name/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       New
-   
-    </a> : ""}
-    {showOptions !== false ?  <a href= "/events/setup/event_name/" class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Edit
-   
-    </a> : ""} <br />
-    {showOptions !== false ?  <a href= "/events/setup/event_name/" class="inline-flex items-center px-3 py-2  mt-2 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Delete
-   
-    </a> : ""}
-  </div>
-</div> <br />
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/service/create/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Formation</h5>
-    </a>
-    <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to add a new Formation to the database.</p> <br />
-    <button onClick={showServiceOptions == false ? showService : unShowService}  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add 
-       
-    </button> <br />
-    <div className="p-2 mt-2">
-  {showServiceOptions !== false ?  <a href='/events/setup/formation' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       New
-   
-    </a> : ""}
-    {showServiceOptions !== false ?  <a href='/events/setup/formation' class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Edit
-   
-    </a> : ""} <br />
-    {showServiceOptions !== false ?  <a href='/events/setup/formation' class="inline-flex items-center px-3 py-2  mt-2 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Delete
-   
-    </a> : ""}
-  </div>
-</div> <br />
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/service/create/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Committee</h5>
-    </a>
-    <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to add a new Committee to the database.</p> <br />
-    <button onClick={showFinanceOptions == false ? showFinance : unShowFinance}  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add 
-       
-    </button> <br />
-    <div className="p-2 mt-2">
-  {showFinanceOptions !== false ?  <a href='/events/setup/committee/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       New
-   
-    </a> : ""}
-    {showFinanceOptions !== false ?  <a href='/events/setup/committee/' class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Edit
-   
-    </a> : ""} <br />
-    {showFinanceOptions !== false ?  <a href='/events/setup/committee/' class="inline-flex items-center px-3 py-2  mt-2 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Delete
-   
-    </a> : ""}
-  </div>
-</div>
-
-</section>
 
 </div>
 

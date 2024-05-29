@@ -103,16 +103,16 @@ useEffect(() => {
       </Tabs.Item>
       <Tabs.Item title="Membership" icon={MdDashboard}>
   <div className="p-10 text-center">
-  <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">This section is used to add a new Member to the database.</p> <br />
-    <h1 href='/membership/detail/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+  <h1 class="mb-3 font-normal text-black  dark:text-gray-400">This section is used to add a new Member to the database.</h1> <br />
+    <a href='/membership/detail/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
         Setup 
       
-    </h1> <br />
+    </a> <br />
   </div>
       </Tabs.Item>
       <Tabs.Item title="Service" icon={HiAdjustments}>
        <div className="p-10 text-center">
-       <h1 class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to add a new Service to the database.</h1> <br />
+       <h1 class="mb-3 font-normal  text-black dark:text-gray-400">This section is used to add a new Service to the database.</h1> <br />
     <a href='/service/detail'  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
         Setup 
       
@@ -139,7 +139,7 @@ useEffect(() => {
       </Tabs.Item>
       <Tabs.Item title="Department" icon={HiClipboardList}>
       <div className="p-10 text-center">
-      <h1 class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to add new Department to the database.</h1> <br />
+      <h1 class="mb-3 font-normal  text-black dark:text-gray-400">This section is used to add new Department to the database.</h1> <br />
     <a href="/departments/"  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white  bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
         Setup
       

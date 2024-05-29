@@ -2,6 +2,10 @@ import Head from 'next/head'
 import Link from 'next/link'
 import React, {useEffect, useState} from 'react'
 
+import { Tabs } from "flowbite-react";
+import { HiAdjustments, HiClipboardList, HiUserCircle } from "react-icons/hi";
+import { MdDashboard } from "react-icons/md";
+
 
 
 const options = {
@@ -120,191 +124,61 @@ useEffect(() => {
   return (
     <>
     
+    <div className='p-5 text-center' >
+      
+      <Tabs aria-label="Tabs with icons" style="underline">
+        <Tabs.Item active title="Fund Channel" icon={HiUserCircle}>
+        <div className='p-10 text-center'>
+        <h1>This section is used to add a new Fund Channel to the database.</h1> <br />
+        <a href="/financials/setup/fund_channel" class="inline-flex items-center px-3 p-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+          Continue
+      
+      </a>
+        </div>
+        </Tabs.Item>
+     
+        <Tabs.Item active title="Bank" icon={HiUserCircle}>
+        <div className='p-10 text-center'>
+        <h1>This section is used to add a new Bank to the database.</h1> <br />
+        <a href="/financials/setup/banks/" class="inline-flex items-center px-3 p-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+          Continue
+      
+      </a>
+        </div>
+        </Tabs.Item>
+     
+        <Tabs.Item active title="Loan Account" icon={HiUserCircle}>
+        <div className='p-10 text-center'>
+        <h1>This section is used to add a new Loan Account to the database.</h1> <br />
+        <a href="/financials/setup/loan_account/" class="inline-flex items-center px-3 p-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+          Continue
+      
+      </a>
+        </div>
+        </Tabs.Item>
+        <Tabs.Item active title="Account Type" icon={HiUserCircle}>
+        <div className='p-10 text-center'>
+        <h1>This section is used to add a new Account Type to the database.</h1> <br />
+        <a href="/financials/setup/account_type/" class="inline-flex items-center px-3 p-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+          Continue
+      
+      </a>
+        </div>
+        </Tabs.Item>
+        <Tabs.Item active title="Expenditure" icon={HiUserCircle}>
+        <div className='p-10 text-center'>
+        <h1>This section is used to add a new Expenditure to the database.</h1> <br />
+        <a href="/financials/setup/expenditure/" class="inline-flex items-center px-3 p-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+          Continue
+      
+      </a>
+        </div>
+        </Tabs.Item>
+      </Tabs>
+  
+      </div>
   
 
-
-<div class="p-4 sm:ml-64" >
- 
-
-<section className='flex flex-wrap space-x-4 p-10'>
-   
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/service/create/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Fund Channel</h5>
-    </a>
-    <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to add a new Service to the database.</p> <br />
-    <button onClick={showServiceOptions == false ? showService : unShowService}  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Continue
-       
-    </button> <br />
-    <div className="p-2 mt-2">
-  {showServiceOptions !== false ?  <a href='/financials/setup/fund_channel' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       New
-   
-    </a> : ""}
-    {showServiceOptions !== false ?  <a href='/financials/setup/fund_channel' class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Edit
-   
-    </a> : ""} <br />
-
-    {showServiceOptions !== false ?  <a href='/financials/setup/fund_channel' class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-red rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Delete
-   
-    </a> : ""} <br />
-    
-  </div>
-</div> <br />
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/membership/create/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bank</h5>
-    </a>
-    <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">This section is used to setup a new Bank to the database.</p> <br />
-    <button onClick={showOptions == false ? show : unShow} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Continue 
-       
-    </button> <br />
-  <div className="p-2 mt-2">
-  {showOptions !== false ?  <a href='/financials/setup/banks/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       New
-   
-    </a> : ""}
-    {showOptions !== false ?  <a href= "/financials/setup/banks/" class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Edit
-   
-    </a> : ""} <br />
-    {showOptions !== false ?  <a href= "/financials/setup/banks/" class="inline-flex items-center px-3 py-2  mt-2 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Delete
-   
-    </a> : ""}
-  </div>
-</div> <br />
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/service/create/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Loan Account</h5>
-    </a>
-    <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to setup a new Loan Account to the database.</p> <br />
-    <button onClick={showEventsOptions == false ? showEvents : unShowEvents}  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Continue 
-       
-    </button> <br />
-    <div className="p-2 mt-2">
-  {showEventsOptions !== false ?  <a href='/financials/setup/loan_account' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       New
-   
-    </a> : ""}
-    {showEventsOptions !== false ?  <a href='/financials/setup/loan_account' class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Edit
-   
-    </a> : ""} <br />
-    {showEventsOptions !== false ?  <a href='/financials/setup/loan_account' class="inline-flex items-center px-3 py-2  mt-2 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Delete
-   
-    </a> : ""}
-  </div>
-</div> <br />
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/membership/create/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Account Type</h5>
-    </a>
-    <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">This section is used to add a new Account type to the database.</p> <br />
-    <button onClick={showBudgetOptions == false ? showBudget : unShowBudget} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Continue 
-       
-    </button> <br />
-  <div className="p-2 mt-2">
-  {showBudgetOptions !== false ?  <a href='/financials/setup/account_type/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       New
-   
-    </a> : ""}
-    {showBudgetOptions !== false ?  <a href= "/financials/setup/account_type/" class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Edit
-   
-    </a> : ""} <br />
-    {showBudgetOptions !== false ?  <a href= "/financials/setup/account_type/" class="inline-flex items-center px-3 py-2  mt-2 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Delete
-   
-    </a> : ""}
-  </div>
-</div> <br />
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/membership/create/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Expenditure</h5>
-    </a>
-    <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">This section is used to setup a new Expenditure to the database.</p> <br />
-    <button onClick={showBankOptions == false ? showBank : unShowBank} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Continue 
-       
-    </button> <br />
-  <div className="p-2 mt-2">
-  {showBankOptions !== false ?  <a href='/financials/setup/expenditure/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       New
-   
-    </a> : ""}
-    {showBankOptions !== false ?  <a href= "/financials/setup/expenditure/" class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Edit
-   
-    </a> : ""} <br />
-    {showBankOptions !== false ?  <a href= "/financials/setup/expenditure/" class="inline-flex items-center px-3 py-2  mt-2 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Delete
-   
-    </a> : ""}
-  </div>
-</div> <br />
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/membership/create/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Budget</h5>
-    </a>
-    <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">This section is used to setup a new Budget to the database.</p> <br />
-    <button onClick={showFinanceOptions == false ? showFinance : unShowFinance} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Continue 
-       
-    </button> <br />
-  <div className="p-2 mt-2">
-  {showFinanceOptions !== false ?  <a href='/financials/setup/budget' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       New
-   
-    </a> : ""}
-    {showFinanceOptions !== false ?  <a href= "/financials/setup/budget" class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Edit
-   
-    </a> : ""} <br />
-    {showFinanceOptions !== false ?  <a href= "/financials/setup/budget" class="inline-flex items-center px-3 py-2  mt-2 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Delete
-   
-    </a> : ""}
-  </div>
-</div> <br />
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/service/create/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Income</h5>
-    </a>
-    <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to add a new Income to the database.</p> <br />
-    <button onClick={showServiceOptions == false ? showService : unShowService}  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Continue
-       
-    </button> <br />
-    <div className="p-2 mt-2">
-  {showServiceOptions !== false ?  <a href='/financials/setup/income' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       New
-   
-    </a> : ""}
-    {showServiceOptions !== false ?  <a href='/financials/setup/income' class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Edit
-   
-    </a> : ""} <br />
-
-    {showServiceOptions !== false ?  <a href='/financials/setup/income' class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-red rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Delete
-   
-    </a> : ""} <br />
-    
-  </div>
-</div>
-</section>
-
-
-
-</div>
 
     </>
   )
