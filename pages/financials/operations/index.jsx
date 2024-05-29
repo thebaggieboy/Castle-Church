@@ -3,6 +3,10 @@ import Link from 'next/link'
 import React, {useEffect, useState} from 'react'
 
 
+import { Tabs } from "flowbite-react";
+import { HiAdjustments, HiClipboardList, HiUserCircle } from "react-icons/hi";
+import { MdDashboard } from "react-icons/md";
+
 
 const options = {
    new:"",
@@ -87,80 +91,47 @@ useEffect(() => {
   return (
     <>
     
+    <div className='p-5 text-center' >
+      
+      <Tabs aria-label="Tabs with icons" style="underline">
+        <Tabs.Item active title="Income" icon={HiUserCircle}>
+        <div className='p-10 text-center'>
+        <h1>This tab is for managing exisiting income </h1> <br />
+        <a href="/financials/operations/income/" class="inline-flex items-center px-3 p-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+         Continue
+      
+      </a>
+        </div>
+        </Tabs.Item>
   
-    
+  
+        <Tabs.Item active title="Expenditure" icon={HiUserCircle}>
+        <div className='p-10 text-center'>
+        <h1>This tab is for managing current expenditures</h1> <br />
+        <a href="/financials/operations/expenditure/new/" class="inline-flex items-center px-3 p-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+         Continue
+      
+      </a>
+        </div>
+        </Tabs.Item>
+        <Tabs.Item active title="Commitee" icon={HiUserCircle}>
+        <div className='p-10 text-center'>
+        <h1>This tab is for managing an existing committee</h1> <br />
+        <a href="/financials/operations/committee/new/" class="inline-flex items-center px-3 p-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+         Continue
+      
+      </a>
+        </div>
+        </Tabs.Item>
 
-<div class="p-4 sm:ml-64" >
+      </Tabs>
+  
+      </div>
  
 
-<section className='flex flex-wrap space-x-4 p-10'>
-   
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/service/create/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Income</h5>
-    </a>
-    <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to add new Income to the database.</p> <br />
-    <button onClick={showServiceOptions == false ? showService : unShowService}  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add
     
-    </button> <br />
-    <div className="p-2 mt-2">
-  {showServiceOptions !== false ?  <a href='/financials/operations/income/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       New
-   
-    </a> : ""}
-    {showServiceOptions !== false ?  <a href='/financials/operations/income/' class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Update
-   
-    </a> : ""} <br />
-    
-  </div>
-</div>  <br />
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/membership/create/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Expenditure</h5>
-    </a>
-    <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">This section is used to add new Expenditure to the database.</p> <br />
-    <button onClick={showOptions == false ? show : unShow} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add 
-    
-    </button> <br />
-  <div className="p-2 mt-2">
-  {showOptions !== false ?  <a href='/financials/operations/expenditure/new/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       New
-   
-    </a> : ""}
-    {showOptions !== false ?  <a href= "/financials/operations/expenditure/new/" class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Update
-   
-    </a> : ""} 
-  </div>
-</div>
-<br />
 
-<div style={{backgroundColor:"white"}} class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="/membership/create/">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Committee</h5>
-    </a>
-    <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">This section is used to add new Committee to the database.</p> <br />
-    <button onClick={showFinanceOptions == false ? showFinance : unShowFinance} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Add 
-    
-    </button> <br />
-  <div className="p-2 mt-2">
-  {showFinanceOptions !== false ?  <a href='/financials/operations/committee/new/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       New
-   
-    </a> : ""}
-    {showFinanceOptions !== false ?  <a href= "/financials/operations/committee/new/" class="inline-flex items-center px-3 py-2 ml-2 text-sm font-medium text-center text-white bg-gray-600 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-       Update
-   
-    </a> : ""} 
-  </div>
-</div>
 
-</section>
-</div>
 
     </>
   )

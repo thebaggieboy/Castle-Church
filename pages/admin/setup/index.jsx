@@ -89,7 +89,7 @@ useEffect(() => {
 
   return (
     <>
-    <div >
+    <div className='p-5 text-center' >
       
     <Tabs aria-label="Tabs with icons" style="underline">
       <Tabs.Item active title="User" icon={HiUserCircle}>
@@ -104,15 +104,15 @@ useEffect(() => {
       <Tabs.Item title="Membership" icon={MdDashboard}>
   <div className="p-10 text-center">
   <p class="mb-3 font-normal text-black text-xs dark:text-gray-400">This section is used to add a new Member to the database.</p> <br />
-    <a href='/membership/detail/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+    <h1 href='/membership/detail/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
         Setup 
       
-    </a> <br />
+    </h1> <br />
   </div>
       </Tabs.Item>
       <Tabs.Item title="Service" icon={HiAdjustments}>
        <div className="p-10 text-center">
-       <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to add a new Service to the database.</p> <br />
+       <h1 class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to add a new Service to the database.</h1> <br />
     <a href='/service/detail'  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
         Setup 
       
@@ -121,7 +121,7 @@ useEffect(() => {
       </Tabs.Item>
       <Tabs.Item title="Financials" icon={HiClipboardList}>
      <div className="p-10 text-center">
-     <p class="mb-3 font-normal text-black dark:text-gray-400">This section is used to add a new Financials to the database.</p> <br />
+     <h1 class="mb-3 font-normal text-black dark:text-gray-400">This section is used to add a new Financials to the database.</h1> <br />
     <a href="/financials/detail" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
         Setup 
       
@@ -130,7 +130,7 @@ useEffect(() => {
       </Tabs.Item>
       <Tabs.Item title="Events" icon={HiClipboardList}>
       <div className="p-10 text-center">
-      <p class="mb-3 font-normal text-black dark:text-gray-400">This section is used to add a new Event to the database.</p> <br />
+      <h1 class="mb-3 font-normal text-black dark:text-gray-400">This section is used to add a new Event to the database.</h1> <br />
     <a href="/events/detail" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
         Setup 
       
@@ -139,7 +139,7 @@ useEffect(() => {
       </Tabs.Item>
       <Tabs.Item title="Department" icon={HiClipboardList}>
       <div className="p-10 text-center">
-      <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to add new Department to the database.</p> <br />
+      <h1 class="mb-3 font-normal text-xs text-black dark:text-gray-400">This section is used to add new Department to the database.</h1> <br />
     <a href="/departments/"  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white  bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
         Setup
       
