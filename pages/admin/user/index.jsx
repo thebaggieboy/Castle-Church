@@ -42,75 +42,9 @@ export default function members() {
        }
      }
      
-   function showNonMember(){
-       console.log("Showing Non member form")
-       setIsMember(true)
-   }
-   
-   function showUsersTable(){
-       console.log("Showing users table")
-       setIsUserTable(true)
-   }
+      
 
 
-   function show () {
-      console.log("showing options")
-      if (showOptions == false) {
-         setShowOptions(true)
-      }
-     
-   }
-   function unShow () {
-      if (showOptions == true) {
-         console.log("showing options")
-      setShowOptions(false)
-      }
-   }
-
-   function showService () {
-      console.log("showing options")
-      if (showServiceOptions == false) {
-         setShowServiceOptions(true)
-      }
-     
-   }
-   function unShowService () {
-      if (showServiceOptions == true) {
-         console.log("showing options")
-      setShowServiceOptions(false)
-      }
-   }
-   
-   function showFinance () {
-      console.log("showing options")
-      if (showFinanceOptions == false) {
-         setShowFinanceOptions(true)
-      }
-     
-   }
-   function unShowFinance () {
-      if (showFinanceOptions == true) {
-         console.log("showing options")
-      setShowFinanceOptions(false)
-      }
-   }
-
-   function showEvents () {
-      console.log("showing options")
-      if (showEventsOptions == false) {
-         setShowEventsOptions(true)
-      }
-     
-   }
-   function unShowEvents () {
-      if (showEventsOptions == true) {
-         console.log("showing options")
-      setShowEventsOptions(false)
-      }
-   }
-useEffect(() => {
-  console.log(showOptions)
-})
 
   return (
     <>
