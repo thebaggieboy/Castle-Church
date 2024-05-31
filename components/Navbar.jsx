@@ -52,10 +52,10 @@ export default function NavBar() {
       <div className="px-4  lg:px-8">
         <nav className="flex items-center justify-between p-4" aria-label="Global">
           <div className="flex lg:flex-1">
-            <a href="/" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5">
               <span className="font-bold text-lg"><Link href={'/'}>Home</Link></span>
               
-            </a>
+            </Link>
 
           </div>
 
