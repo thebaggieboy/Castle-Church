@@ -9,80 +9,31 @@ const options = {
    edit:"",
    delete:""
 }
+export function NoneMemberForm() {
+   return(
+       <>
+       <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Full Name (Non-Member)</label>
+       <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
+       </>
+   )
 
+}
 
 
 export default function members() {
-  
-   const setup_type = {
-      service:"",
-      members:"",
-      financials:"",
-      events: ""
+   const [isMember , setIsMember] = useState(false)
+   const [isUserTable , setIsUserTable] = useState(false)
+   const [isMem , setIsMem] = useState(null)
 
-   }
-   const [showOptions, setShowOptions] = useState(false)
-   const [showServiceOptions, setShowServiceOptions] = useState(false)
-   const [showFinanceOptions, setShowFinanceOptions] = useState(false)
-   const [showEventsOptions, setShowEventsOptions] = useState(false)
-   function show () {
-      console.log("showing options")
-      if (showOptions == false) {
-         setShowOptions(true)
-      }
-     
-   }
-   function unShow () {
-      if (showOptions == true) {
-         console.log("showing options")
-      setShowOptions(false)
-      }
-   }
+   const inputChange = (e) => {
+       const { checked, value } = e.target;
+       if (checked) {
+           setIsMember(true)
+       } else {
+           setIsMember(false)
+       }
+     }
 
-   function showService () {
-      console.log("showing options")
-      if (showServiceOptions == false) {
-         setShowServiceOptions(true)
-      }
-     
-   }
-   function unShowService () {
-      if (showServiceOptions == true) {
-         console.log("showing options")
-      setShowServiceOptions(false)
-      }
-   }
-   
-   function showFinance () {
-      console.log("showing options")
-      if (showFinanceOptions == false) {
-         setShowFinanceOptions(true)
-      }
-     
-   }
-   function unShowFinance () {
-      if (showFinanceOptions == true) {
-         console.log("showing options")
-      setShowFinanceOptions(false)
-      }
-   }
-
-   function showEvents () {
-      console.log("showing options")
-      if (showEventsOptions == false) {
-         setShowEventsOptions(true)
-      }
-     
-   }
-   function unShowEvents () {
-      if (showEventsOptions == true) {
-         console.log("showing options")
-      setShowEventsOptions(false)
-      }
-   }
-useEffect(() => {
-  console.log(showOptions)
-})
 
   return (
     <>

@@ -53,10 +53,16 @@ export default function NavBar() {
         <nav className="flex items-center justify-between p-4" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5">
-              <span className="font-bold text-lg"><Link href={'/'}>CASTLE</Link></span>
+              <span className="font-bold text-lg"><Link href={'/'}>Home</Link></span>
               
             </a>
+
           </div>
+
+       {/* {   <div className='mr-10 font-bold '>
+            <a href="/">Home</a>
+          </div>} */}
+          
           <div className="flex lg:hidden">
             <button
               type="button"
@@ -69,7 +75,7 @@ export default function NavBar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
 
-<Menu as="div" className="relative inline-block text-left">
+<Menu as="div" className="relative inline-block text-left ml-5">
 
       
   
