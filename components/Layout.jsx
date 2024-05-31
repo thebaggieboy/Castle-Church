@@ -39,7 +39,7 @@ console.log(activeLink)
       <>
       
       <NavBar/>  
-      
+     
    
  
          {children}
