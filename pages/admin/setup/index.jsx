@@ -6,100 +6,381 @@ import { HiAdjustments, HiClipboardList, HiUserCircle } from "react-icons/hi";
 import { MdDashboard } from "react-icons/md";
 
 
-export  function NoneMemberForm() {
-   return(
-       <>
-       <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Full Name (Non-Member)</label>
-       <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
-       </>
-   )
 
+const options = {
+   new:"",
+   edit:"",
+   delete:""
 }
-export  function GroupNameForm() {
-   return(
-       <>
-       <label for="name" class="block mb-2 text-sm font-medium text-black dark:text-white">Group Name</label>
-       <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
-       </>
-   )
 
-}
+
+
 export default function members() {
   
-   const [isMember , setIsMember] = useState(false)
-   const inputChange = (e) => {
-      const { checked, value } = e.target;
-      if (checked) {
-          setIsMember(true)
-      } else {
-          setIsMember(false)
+   const setup_type = {
+      service:"",
+      members:"",
+      financials:"",
+      events: ""
+
+   }
+   const [showOptions, setShowOptions] = useState(false)
+   const [showServiceOptions, setShowServiceOptions] = useState(false)
+   const [showFinanceOptions, setShowFinanceOptions] = useState(false)
+   const [showEventsOptions, setShowEventsOptions] = useState(false)
+   function show () {
+      console.log("showing options")
+      if (showOptions == false) {
+         setShowOptions(true)
       }
-    }
+     
+   }
+   function unShow () {
+      if (showOptions == true) {
+         console.log("showing options")
+      setShowOptions(false)
+      }
+   }
+
+   function showService () {
+      console.log("showing options")
+      if (showServiceOptions == false) {
+         setShowServiceOptions(true)
+      }
+     
+   }
+   function unShowService () {
+      if (showServiceOptions == true) {
+         console.log("showing options")
+      setShowServiceOptions(false)
+      }
+   }
+   
+   function showFinance () {
+      console.log("showing options")
+      if (showFinanceOptions == false) {
+         setShowFinanceOptions(true)
+      }
+     
+   }
+   function unShowFinance () {
+      if (showFinanceOptions == true) {
+         console.log("showing options")
+      setShowFinanceOptions(false)
+      }
+   }
+
+   function showEvents () {
+      console.log("showing options")
+      if (showEventsOptions == false) {
+         setShowEventsOptions(true)
+      }
+     
+   }
+   function unShowEvents () {
+      if (showEventsOptions == true) {
+         console.log("showing options")
+      setShowEventsOptions(false)
+      }
+   }
+useEffect(() => {
+  console.log(showOptions)
+})
 
   return (
     <>
-    <div className='p-5 text-center' >
+    <section >
+    <div className='text-center p-5' >
       
-    <Tabs aria-label="Tabs with icons" style="underline">
-      <Tabs.Item active title="User" icon={HiUserCircle}>
-      <div className='p-10 text-center'>
-      <h1>This tab is for setup of user credentials, permissions and admin roles.</h1> <br />
-      <Link href="/admin/user/" class="inline-flex items-center px-3 p-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
-        Setup
+      <Tabs aria-label="Tabs with icons" style="underline">
+        <Tabs.Item active title="User" icon={HiUserCircle}>
+        <div className="grid grid-cols-2 gap-x-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 xl:gap-x-5">
+         <div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     
-    </Link>
+           <h5 class="mb-2 text-md font-bold tracking-tight text-black dark:text-white">User Profile</h5>
+    
+       <p class="mb-3 font-normal  text-xs dark:text-gray-400">Setup user profile & login information</p> <br />
+       <Link href="/admin/user/" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+Continue       
+       </Link>
+   </div>
+
+
+
+   <div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+       
+           <h5 class="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Roles</h5>
+    
+       <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Setup user roles & app priviledges (Read, Write, Delete) </p> <br />
+       <Link href="/admin/user/role" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+          Continue
+       
+       </Link>
+   </div>
+   
+
+
+        </div>
+  
+        </Tabs.Item>
+
+        <Tabs.Item title="Membership" icon={MdDashboard}>
+        <div className="grid grid-cols-2 gap-x-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 xl:gap-x-5">
+         <div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    
+           <h5 class="mb-2 text-md font-bold tracking-tight text-black dark:text-white">Rank</h5>
+    
+       <p class="mb-3 font-normal  text-xs dark:text-gray-400">Setup ranks of different members.</p> <br />
+       <Link href="/admin/user/" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+Continue       
+       </Link>
+   </div>
+
+
+
+   <div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+       
+           <h5 class="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Group</h5>
+    
+       <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Setup groups members belong to. </p> <br />
+       <Link href="/admin/user/role" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+          Continue
+       
+       </Link>
+   </div>
+   
+   <div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+       
+       <h5 class="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Marital Status</h5>
+
+   <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Setup Marital Status) </p> <br />
+   <Link href="/admin/user/role" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+      Continue
+   
+   </Link>
+</div>
+
+<div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+       
+       <h5 class="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Occupation</h5>
+
+   <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Setup occupation of a member</p> <br />
+   <Link href="/admin/user/role" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+      Continue
+   
+   </Link>
+</div>
+
+
+        </div>
+  
+        </Tabs.Item>
+
+
+
+
+
+        <Tabs.Item title="Service" icon={HiAdjustments}>
+        <div className="grid grid-cols-2 gap-x-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 xl:gap-x-5">
+         <div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    
+           <h5 class="mb-2 text-md font-bold tracking-tight text-black dark:text-white">Church</h5>
+    
+       <p class="mb-3 font-normal  text-xs dark:text-gray-400">Setup Church.</p> <br />
+       <Link href="/admin/user/" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+Continue       
+       </Link>
+   </div>
+
+
+
+   <div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+       
+           <h5 class="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Congregational Gathering (CG)</h5>
+    
+       <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Setup Congregational Gathering </p> <br />
+       <Link href="/admin/user/role" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+          Continue
+       
+       </Link>
+   </div>
+   
+
+
+        </div>
+  
+        </Tabs.Item>
+
+
+
+        <Tabs.Item title="Financials" icon={HiClipboardList}>
+        <div className="grid grid-cols-2 gap-x-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-5">
+         <div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    
+           <h5 class="mb-2 text-md font-bold tracking-tight text-black dark:text-white">Fund Channel</h5>
+    
+       <p class="mb-3 font-normal  text-xs dark:text-gray-400">Setup Fund Channel </p> <br />
+       <Link href="/admin/user/" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+Continue       
+       </Link>
+   </div>
+
+
+
+   <div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+       
+           <h5 class="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Bank</h5>
+    
+       <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Setup Bank information </p> <br />
+       <Link href="/admin/user/role" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+          Continue
+       
+       </Link>
+   </div>
+   <div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    
+    <h5 class="mb-2 text-md font-bold tracking-tight text-black dark:text-white">Loan Account</h5>
+
+<p class="mb-3 font-normal  text-xs dark:text-gray-400">Setup Loan Accounts.</p> <br />
+<Link href="/admin/user/" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+Continue       
+</Link>
+</div>
+<div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+       
+       <h5 class="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Account Type</h5>
+
+   <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Setup type of account. </p> <br />
+   <Link href="/admin/user/role" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+      Continue
+   
+   </Link>
+</div>
+<div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+       
+       <h5 class="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Expenditure</h5>
+
+   <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Setup expenditure. </p> <br />
+   <Link href="/admin/user/role" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+      Continue
+   
+   </Link>
+</div>
+
+
+        </div>
+
+  
+        </Tabs.Item>
+
+
+
+        
+        <Tabs.Item title="Events" icon={HiClipboardList}>
+        <div className="grid grid-cols-2 gap-x-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 xl:gap-x-5">
+         <div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    
+           <h5 class="mb-2 text-md font-bold tracking-tight text-black dark:text-white">Event Name</h5>
+    
+       <p class="mb-3 font-normal  text-xs dark:text-gray-400">Setup name of an event.</p> <br />
+       <Link href="/admin/user/" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+Continue       
+       </Link>
+   </div>
+
+
+
+   <div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+       
+           <h5 class="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Formation</h5>
+    
+       <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Setup Formation </p> <br />
+       <Link href="/admin/user/role" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+          Continue
+       
+       </Link>
+   </div>
+   
+   <div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+       
+           <h5 class="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Committee</h5>
+    
+       <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Setup committee </p> <br />
+       <Link href="/admin/user/role" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+          Continue
+       
+       </Link>
+   </div>
+   
+
+
+        </div>
+        </Tabs.Item>
+        <Tabs.Item title="Department" icon={HiClipboardList}>
+        <div className="grid grid-cols-2 gap-x-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 xl:gap-x-5">
+         <div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    
+           <h5 class="mb-2 text-md font-bold tracking-tight text-black dark:text-white">Coordinator</h5>
+    
+       <p class="mb-3 font-normal  text-xs dark:text-gray-400">Setup the coordinator of a particular department.</p> <br />
+       <Link href="/admin/user/" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
+Continue       
+       </Link>
+   </div>
+
+
+
+   <div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+       
+           <h5 class="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Head of Department</h5>
+    
+       <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Setup the head of a particular department. </p> <br />
+       <Link href="/admin/user/role" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+          Continue
+       
+       </Link>
+   </div>
+
+   <div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+       
+       <h5 class="mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Units</h5>
+
+   <p class="mb-3 font-normal text-xs text-black dark:text-gray-400">Setup Units </p> <br />
+   <Link href="/admin/user/role" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-black dark:focus:ring-blue-800">
+      Continue
+   
+   </Link>
+</div>
+
+   
+
+
+        </div>
+        </Tabs.Item>
+      </Tabs>
+  
       </div>
-      </Tabs.Item>
-      <Tabs.Item title="Membership" icon={MdDashboard}>
-  <div className="p-10 text-center">
-  <h1 class="mb-3 font-normal text-black  dark:text-gray-400">This section is used to add a new Member to the database.</h1> <br />
-    <Link href='/membership/detail/' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Setup 
-      
-    </Link> <br />
-  </div>
-      </Tabs.Item>
-      <Tabs.Item title="Service" icon={HiAdjustments}>
-       <div className="p-10 text-center">
-       <h1 class="mb-3 font-normal  text-black dark:text-gray-400">This section is used to add a new Service to the database.</h1> <br />
-    <Link href='/service/detail'  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Setup 
-      
-    </Link> 
-       </div>
-      </Tabs.Item>
-      <Tabs.Item title="Financials" icon={HiClipboardList}>
-     <div className="p-10 text-center">
-     <h1 class="mb-3 font-normal text-black dark:text-gray-400">This section is used to add a new Financials to the database.</h1> <br />
-    <Link href="/financials/detail" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Setup 
-      
-    </Link>
-       </div>
-      </Tabs.Item>
-      <Tabs.Item title="Events" icon={HiClipboardList}>
-      <div className="p-10 text-center">
-      <h1 class="mb-3 font-normal text-black dark:text-gray-400">This section is used to add a new Event to the database.</h1> <br />
-    <Link href="/events/detail" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Setup 
-      
-    </Link>
-         </div>
-      </Tabs.Item>
-      <Tabs.Item title="Department" icon={HiClipboardList}>
-      <div className="p-10 text-center">
-      <h1 class="mb-3 font-normal  text-black dark:text-gray-400">This section is used to add new Department to the database.</h1> <br />
-    <Link href="/departments/"  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white  bg-black rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-        Setup
-      
-    </Link>
-       </div>
-      </Tabs.Item>
-    </Tabs>
+    </section>
+ 
 
-    </div>
+    
+<div class="p-4 sm:ml-64" >
+ 
+<section className=' space-x-4 p-10'>
+   
+
+<br />
 
 
+
+
+
+</section>
+
+
+
+
+</div>
 
 
 

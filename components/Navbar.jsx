@@ -82,7 +82,7 @@ export default function NavBar() {
       <div>
         
         <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold  text-white ">
-          Admin
+          Setup
           <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
         </Menu.Button>
       </div>
@@ -104,7 +104,7 @@ export default function NavBar() {
                   href="/admin/setup/"
                   className={ active ? 'bg-gray-100  text-black' : 'text-black','block px-4 py-2 text-sm' }
                 >
-                  Setup
+                  User 
                 </a>
               )}
             </Menu.Item>
@@ -117,7 +117,7 @@ export default function NavBar() {
                     'block px-4 py-2 text-sm'
                }
                 >
-                  Backup
+                  Membership
                 </a>
               )}
             </Menu.Item>
@@ -130,11 +130,53 @@ export default function NavBar() {
                     'block px-4 py-2 text-sm'
                   }
                 >
-                  Security
+                  Service
                 </a>
               )}
             </Menu.Item>
         
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  href="#"
+                  className={
+                    active ? 'bg-gray-100  text-black' : 'text-gray-700',
+                    'block px-4 py-2 text-sm'
+                  }
+                >
+                  Financials
+                </a>
+              )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  href="#"
+                  className={
+                    active ? 'bg-gray-100  text-black' : 'text-gray-700',
+                    'block px-4 py-2 text-sm'
+                  }
+                >
+                  Events
+                </a>
+              )}
+            </Menu.Item>
+        
+            <Menu.Item>
+              {({ active }) => (
+                <a
+                  href="#"
+                  className={
+                    active ? 'bg-gray-100  text-black' : 'text-gray-700',
+                    'block px-4 py-2 text-sm'
+                  }
+                >
+                  Departments
+                </a>
+              )}
+            </Menu.Item>
+        
+
           </div>
         </Menu.Items>
       </Transition>
@@ -376,6 +418,14 @@ export default function NavBar() {
 
 
 </Menu>
+
+<div>
+  <a href="#" className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold  text-white">
+    File
+    
+  </a>
+</div>
+
 
 <div>
   <a href="#" className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold  text-white">
