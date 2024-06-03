@@ -28,61 +28,23 @@ export default function members() {
    const [showServiceOptions, setShowServiceOptions] = useState(false)
    const [showFinanceOptions, setShowFinanceOptions] = useState(false)
    const [showEventsOptions, setShowEventsOptions] = useState(false)
-   function show () {
+   function showTab () {
       console.log("showing options")
       if (showOptions == false) {
          setShowOptions(true)
       }
      
    }
-   function unShow () {
+   function unShowTab () {
       if (showOptions == true) {
          console.log("showing options")
       setShowOptions(false)
       }
    }
 
-   function showService () {
-      console.log("showing options")
-      if (showServiceOptions == false) {
-         setShowServiceOptions(true)
-      }
-     
-   }
-   function unShowService () {
-      if (showServiceOptions == true) {
-         console.log("showing options")
-      setShowServiceOptions(false)
-      }
-   }
-   
-   function showFinance () {
-      console.log("showing options")
-      if (showFinanceOptions == false) {
-         setShowFinanceOptions(true)
-      }
-     
-   }
-   function unShowFinance () {
-      if (showFinanceOptions == true) {
-         console.log("showing options")
-      setShowFinanceOptions(false)
-      }
-   }
 
-   function showEvents () {
-      console.log("showing options")
-      if (showEventsOptions == false) {
-         setShowEventsOptions(true)
-      }
-     
-   }
-   function unShowEvents () {
-      if (showEventsOptions == true) {
-         console.log("showing options")
-      setShowEventsOptions(false)
-      }
-   }
+   
+
 useEffect(() => {
   console.log(showOptions)
 })
@@ -90,10 +52,10 @@ useEffect(() => {
   return (
     <>
     <section >
-    <div className='text-center p-5' >
+    <div className='relative text-center p-5' style={{zIndex:-1}} >
       
       <Tabs aria-label="Tabs with icons" style="underline">
-        <Tabs.Item active title="User" icon={HiUserCircle}>
+        <Tabs.Item active title="User" icon={HiUserCircle} >
         <div className="grid grid-cols-2 gap-x-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 xl:gap-x-5">
          <div style={{backgroundColor:"white", borderRadius:0, boxShadow:2}} class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     
