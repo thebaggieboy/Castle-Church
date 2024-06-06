@@ -19,7 +19,10 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { useRouter } from 'next/router'
+import { Tabs } from "flowbite-react";
 
+
+import { Dropdown } from "flowbite-react";
 
 
 const navigation = [
@@ -50,7 +53,7 @@ export default function NavBar() {
       
       </div>
       <div className="px-4  lg:px-8">
-        <nav className="flex items-center justify-between p-4" aria-label="Global">
+        <nav className="flex items-center justify-between p-4" aria-label="Global"  style={{position:'relative', zIndex:9999}}>
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="font-bold text-lg"><Link href={'/'}>Home</Link></span>
@@ -96,84 +99,108 @@ export default function NavBar() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-84 origin-top-right rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-blue-800 text-white font-light   ring-opacity-5 focus:outline-none">
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/admin/setup/"
-                  className={ active ? 'bg-gray-100  text-black' : 'text-black','block px-4 py-2 text-sm' }
-                >
-                  User 
-                </a>
+             
+                  <Dropdown className="mt-2" dismissOnClick={true} label="User" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                    <Dropdown.Item as={Link} href="/admin/user/">
+                      User Profile
+                    </Dropdown.Item>
+                    <Dropdown.Item as={Link} href="/setup/user/role">
+                      Roles
+                    </Dropdown.Item>
+                  </Dropdown> 
+             
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/backup/"
-                  className={
-                    active ? 'bg-gray-100  text-black' : 'text-black',
-                    'block px-4 py-2 text-sm'
-               }
-                >
-                  Membership
-                </a>
+                      <Dropdown className=" ml-5" dismissOnClick={true} label="Membership" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                       <Dropdown.Item as={Link} href="/membership/setup/rank?membership=rank">
+                         Rank
+                       </Dropdown.Item>
+                       <Dropdown.Item as={Link} href="/membership/setup/group?membership=group">
+                         Group
+                       </Dropdown.Item>
+                       <Dropdown.Item as={Link} href="/membership/setup/marital_status?membership=marital_status">
+                         Marital Status
+                       </Dropdown.Item>
+                       <Dropdown.Item as={Link} href="/membership/setup/rank?occupation=occupation">
+                         Occupation
+                       </Dropdown.Item>
+                     </Dropdown> 
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
-                  className={
-                    active ? 'bg-gray-100  text-black' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  }
-                >
-                  Service
-                </a>
-              )}
-            </Menu.Item>
-        
-            <Menu.Item>
-              {({ active }) => (
-                <a
-                  href="#"
-                  className={
-                    active ? 'bg-gray-100  text-black' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  }
-                >
-                  Financials
-                </a>
-              )}
-            </Menu.Item>
-            <Menu.Item>
-              {({ active }) => (
-                <a
-                  href="#"
-                  className={
-                    active ? 'bg-gray-100  text-black' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  }
-                >
-                  Events
-                </a>
+                  <Dropdown className=" ml-5" dismissOnClick={true} label="Service" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                  <Dropdown.Item as={Link} href="/service/setup/church?service=church">
+                    Church
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} href="/service/setup/service?service=service">
+                    Congregational Gathering
+                  </Dropdown.Item>
+               
+                </Dropdown> 
               )}
             </Menu.Item>
         
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
-                  className={
-                    active ? 'bg-gray-100  text-black' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  }
-                >
-                  Departments
-                </a>
+                  <Dropdown className=" ml-5" dismissOnClick={true} label="Financials" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                  <Dropdown.Item as={Link} href="/financials/setup/fund_channel?financials=fund_channel">
+                    Fund Channel
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} href="/financials/setup/bank?financials=bank">
+                    Bank
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} href="/financials/setup/loan_account?financials=loan_account">
+                   Loan Account
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} href="/financials/setup/account_type?financials=account_type">
+                    Account Type
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} href="/financials/setup/expenditure?financials=financials">
+                    Expenditure
+                  </Dropdown.Item>
+                </Dropdown> 
               )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                     <Dropdown className=" ml-5" dismissOnClick={true} label="Events" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                     <Dropdown.Item as={Link} href="/events/setup/event_name?events=event_name">
+                       Event Name
+                     </Dropdown.Item>
+                     <Dropdown.Item as={Link} href="/events/setup/formation?events=formation">
+                       Formation
+                     </Dropdown.Item>
+                     <Dropdown.Item as={Link} href="/events/setup/committee?events=committee">
+                      Committee
+                     </Dropdown.Item>
+             
+                   </Dropdown> 
+              )}
+            </Menu.Item>
+        
+            <Menu.Item>
+              {({ active }) => ( 
+                  <Dropdown className=" ml-5" dismissOnClick={true} label="Departments" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                  <Dropdown.Item as={Link} href="#">
+                    Coordinator
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} href="#">
+                    Head of department
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} href="#">
+                    Units
+                  </Dropdown.Item>
+
+                </Dropdown> 
+              )}
+              
             </Menu.Item>
         
 
@@ -205,68 +232,76 @@ export default function NavBar() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-blue-800 text-white    ring-opacity-5 focus:outline-none">
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/operations/membership/"
-                  className={ active ? 'bg-gray-100  text-black' : 'text-gray-700','block px-4 py-2 text-sm' }
-                >
-                  Membership
-                </a>
+                  <Dropdown className=" ml-5" dismissOnClick={true} label="Membership" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                  <Dropdown.Item as={Link} href="/membership/setup/personal?membership=personal">
+                    Personal
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} href="/membership/setup/birth?membership=birth">
+                    Birth
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} href="/membership/setup/death?membership=death">
+                   Death
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} href="/membership/setup/anointment?membership=anointment">
+                    Anointment
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} href="/membership/setup/group?membership=group">
+                   Group
+                  </Dropdown.Item>
+          
+                </Dropdown> 
+              )}
+            </Menu.Item>
+         
+            <Menu.Item>
+              {({ active }) => (
+                <Dropdown className=" ml-5" dismissOnClick={true} label="Service" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                <Dropdown.Item as={Link} href="/service/operations/attendance?service=attendance">
+                  Attendance
+                </Dropdown.Item>
+
+        
+              </Dropdown> 
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/service/operations/"
-                  className={
-                    active ? 'bg-gray-100  text-black' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-               }
-                >
-                  Service
-                </a>
+              <Dropdown className=" ml-5" dismissOnClick={true} label="Financials" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+              <Dropdown.Item as={Link} href="/financials/operations/income?financials=income">
+                Income
+              </Dropdown.Item>
+              <Dropdown.Item as={Link} href="/financials/operations/expenditure?financials=expenditure">
+                Expenditure
+              </Dropdown.Item>
+              <Dropdown.Item as={Link} href="/financials/operations/committee?financials=committee">
+               Committee
+              </Dropdown.Item>
+           
+       
+            </Dropdown> 
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/financials/operations/"
-                  className={
-                    active ? 'bg-gray-100  text-black' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  }
-                >
-                  Financials
-                </a>
-              )}
-            </Menu.Item>
-            <Menu.Item>
-              {({ active }) => (
-                <a
-                  href="/docuement_management/operations/"
-                  className={
-                    active ? 'bg-gray-100  text-black' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  }
-                >
-                  Document Management
-                </a>
-              )}
-            </Menu.Item>
-            <Menu.Item>
-              {({ active }) => (
-                <a
-                  href="/operations/units/"
-                  className={
-                    active ? 'bg-gray-100  text-black' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  }
-                >
-                  Units
-                </a>
+                <Dropdown className=" ml-5" dismissOnClick={true} label="Document Management" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                <Dropdown.Item as={Link} href="/document_management/reports?document_management=reports">
+                  Reports
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/document_management/service_announcements?document_management=service_announcements">
+                  Service Announcements
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/document_management/meetings?document_management=meetings">
+                 Meetings
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/document_management/sermon?document_management=sermon">
+                  Sermon
+                </Dropdown.Item>
+              
+              </Dropdown> 
               )}
             </Menu.Item>
         
@@ -296,7 +331,7 @@ export default function NavBar() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-blue-800 text-white    ring-opacity-5 focus:outline-none">
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
@@ -348,7 +383,7 @@ export default function NavBar() {
   leaveFrom="transform opacity-100 scale-100"
   leaveTo="transform opacity-0 scale-95"
 >
-  <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+  <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-blue-800 text-white    ring-opacity-5 focus:outline-none">
     <div className="py-1">
       <Menu.Item>
         {({ active }) => (
@@ -491,7 +526,7 @@ export default function NavBar() {
   leaveFrom="transform opacity-100 scale-100"
   leaveTo="transform opacity-0 scale-95"
 >
-  <Menu.Items className="absolute right-0 z-10 mt-2 w-24 origin-top-right rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+  <Menu.Items className="absolute right-0 z-10 mt-2 w-24 origin-top-right rounded-md bg-blue-800   ring-opacity-5 focus:outline-none">
     <div className="py-1">
       <Menu.Item>
         {({ active }) => (
@@ -558,7 +593,7 @@ export default function NavBar() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-34 origin-top-right rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-34 origin-top-right rounded-md bg-blue-800    ring-opacity-5 focus:outline-none">
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
@@ -649,7 +684,7 @@ export default function NavBar() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-24 origin-top-right rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-24 origin-top-right rounded-md bg-black    ring-opacity-5 focus:outline-none">
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
@@ -703,7 +738,7 @@ export default function NavBar() {
   leaveFrom="transform opacity-100 scale-100"
   leaveTo="transform opacity-0 scale-95"
 >
-  <Menu.Items className="absolute right-0 z-10 mt-2 w-34 origin-top-right text-white rounded-md bg-black shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+  <Menu.Items className="absolute right-0 z-10 mt-2 w-34 origin-top-right text-white rounded-md bg-black    ring-opacity-5 focus:outline-none">
     <div className="py-1">
       <Menu.Item>
         {({ active }) => (
