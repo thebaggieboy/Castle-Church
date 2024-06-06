@@ -141,12 +141,12 @@ export default function AccountType() {
             <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-white uppercase bg-gray-700 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
-                            <th scope="col" class="px-4 py-3">ID</th>
-                            <th scope="col" class="px-4 py-3">Event</th>
-                            <th scope="col" class="px-4 py-3">Year</th>
-                            <th scope="col" class="px-4 py-3">Event Date</th>
-                            <th scope="col" class="px-4 py-3">Income</th>
-                            <th scope="col" class="px-4 py-3">Expenditure</th>
+                            <th scope="col" class="px-4 py-3">Account Name</th>
+                            <th scope="col" class="px-4 py-3">Bank Name</th>
+                            <th scope="col" class="px-4 py-3">Fund Channel</th>
+                            <th scope="col" class="px-4 py-3">Account Number</th>
+                            <th scope="col" class="px-4 py-3">Bank Address</th>
+                            <th scope="col" class="px-4 py-3">Account Officer</th>
                           
                           
                         </tr>
@@ -155,12 +155,12 @@ export default function AccountType() {
 
                         
                         <tr class="border-b dark:border-gray-700">
-                            <th scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white">1</th>
-                            <td scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white">Juvenile Harvest</td>
-                            <td scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white">2024</td>
-                            <td scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white">06/06/2024</td>
-                            <td scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white">67500.00</td>
-                            <td scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white">25000.00</td>
+                            <th scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white"></th>
+                            <td scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white"></td>
+                            <td scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white"></td>
+                            <td scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white"></td>
+                            <td scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white"></td>
+                            <td scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white"></td>
                         
                         </tr>
                         
