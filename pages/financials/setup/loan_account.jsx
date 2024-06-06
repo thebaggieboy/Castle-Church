@@ -1,9 +1,14 @@
 import Head from 'next/head'
-import React from 'react'
+import React, { useState }  from 'react'
+
+import { Button, Modal } from "flowbite-react";
 
 
 
 export default function AccountType() {
+  const [openModal, setOpenModal] = useState(false);
+  const [openModal2, setOpenModal2] = useState(false);
+
   return (
     <>
 <Head>

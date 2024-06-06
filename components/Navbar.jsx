@@ -146,19 +146,19 @@ export default function NavBar() {
             <Menu.Item>
               {({ active }) => (
                   <Dropdown className=" ml-5" dismissOnClick={true} label="Financials" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                  <Dropdown.Item as={""} href="/financials/setup/fund_channel?financials=fund_channel">
+                  <Dropdown.Item as={""} href="/financials/setup/fund_channel">
                     Fund Channel
                   </Dropdown.Item>
-                  <Dropdown.Item as={""} href="/financials/setup/bank?financials=bank">
+                  <Dropdown.Item as={""} href="/financials/setup/banks">
                     Bank
                   </Dropdown.Item>
-                  <Dropdown.Item as={""} href="/financials/setup/loan_account?financials=loan_account">
+                  <Dropdown.Item as={""} href="/financials/setup/loan_account">
                    Loan Account
                   </Dropdown.Item>
-                  <Dropdown.Item as={""} href="/financials/setup/account_type?financials=account_type">
+                  <Dropdown.Item as={""} href="/financials/setup/account_type">
                     Account Type
                   </Dropdown.Item>
-                  <Dropdown.Item as={""} href="/financials/setup/expenditure?financials=financials">
+                  <Dropdown.Item as={""} href="/financials/setup/expenditure">
                     Expenditure
                   </Dropdown.Item>
                 </Dropdown> 
