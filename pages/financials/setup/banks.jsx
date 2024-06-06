@@ -31,35 +31,48 @@ export default function AccountType() {
                 </div>
                 
                 <div class="sm:col-span-2 ">
-                <label for="name" class="ml-2 mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Account Name: </label>
+             <div className="p-1">
+             <label for="name" class="ml-2 mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Account Name: </label>
                 <input type="email" name="name" id="name" class=" inline bg-gray-50 border border-gray-300 text-gray-900 text-xs h-7 focus:ring-primary-600 focus:border-primary-600 block  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
+                 </div>  
+                
+            <div className="p-1">
+            <label for="name" class="space-y-2 ml-2 mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Bank Name: </label>
+                <input type="email" name="name" id="name" class=" mr-1 ml-4 inline bg-gray-50 border border-gray-300 text-gray-900 text-xs h-7 focus:ring-primary-600 focus:border-primary-600 block  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
                    
-
-                <label for="name" class="ml-2 mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Bank Name: </label>
-                <input type="email" name="name" id="name" class=" inline bg-gray-50 border border-gray-300 text-gray-900 text-xs h-7 focus:ring-primary-600 focus:border-primary-600 block  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
-                   
+            </div>
 
 
-                <label for="name" class="ml-2 mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Fund Channel: </label>
+             <div className="p-1">
+             <label for="name" class="space-y-2 ml-2 mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Fund Channel: </label>
                          
-                         <select id="category" class="inline bg-gray-50 border border-gray-300 text-gray-900 text-xs  focus:ring-primary-500 focus:border-primary-500 block  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                         <select id="category" class=" ml-1 inline bg-gray-50 border border-gray-300 text-gray-900 text-xs  focus:ring-primary-500 focus:border-primary-500 block  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
                              <option selected="">Select </option>
                              <option selected="">New Savings </option>
                              <option selected="">New Current</option>
                               
                              
                          </select>
-                       
-                         <label for="name" class="ml-2 mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Account Number: </label>
+             </div>
+                     
+            <div className="p-1">
+                           
+            <label for="name" class=" ml-2 mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Account Number: </label>
                 <input type="email" name="name" id="name" class=" inline bg-gray-50 border border-gray-300 text-gray-900 text-xs h-7 focus:ring-primary-600 focus:border-primary-600 block  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
-                   
-                <label for="name" class="ml-2 mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Bank Address: </label>
-                <input type="email" name="name" id="name" class=" inline bg-gray-50 border border-gray-300 text-gray-900 text-xs h-7 focus:ring-primary-600 focus:border-primary-600 block  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
-                   
-                <label for="name" class="ml-2 mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Account Officer: </label>
+                 
+            </div>
+                <div className="p-1">
+                <label for="name" class="space-y-2 ml-2 mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Bank Address: </label>
+                <input type="email" name="name" id="name" class="ml-2 inline bg-gray-50 border border-gray-300 text-gray-900 text-xs h-7 focus:ring-primary-600 focus:border-primary-600 block  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
+                 
+                </div>
+             
+             <div className="p-1">
+             <label for="name" class="space-y-2 ml-2 mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Account Officer: </label>
                 <input type="email" name="name" id="name" class=" inline bg-gray-50 border border-gray-300 text-gray-900 text-xs h-7 focus:ring-primary-600 focus:border-primary-600 block  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
                    
 
+             </div>
                 </div>
              
             
@@ -143,7 +156,7 @@ export default function AccountType() {
                         <tr>
                             <th scope="col" class="px-4 py-3">Account Name</th>
                             <th scope="col" class="px-4 py-3">Bank Name</th>
-                            <th scope="col" class="px-4 py-3">Fund Channel</th>
+            
                             <th scope="col" class="px-4 py-3">Account Number</th>
                             <th scope="col" class="px-4 py-3">Bank Address</th>
                             <th scope="col" class="px-4 py-3">Account Officer</th>
@@ -155,18 +168,16 @@ export default function AccountType() {
 
                         
                         <tr class="border-b dark:border-gray-700">
-                            <th scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white"></th>
-                            <td scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white"></td>
-                            <td scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white"></td>
-                            <td scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white"></td>
-                            <td scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white"></td>
+                            <th scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white">Harvest Income</th>
+                            <td scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white">Zenith</td>
+                            <td scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white">12323432</td>
+                            <td scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white">Marina</td>
+                     
                             <td scope="row" class="px-4 py-3 font-xs text-gray-900 whitespace-nowrap dark:text-white"></td>
                         
                         </tr>
                         
-                   
-
-                       
+          
                     </tbody>
                 </table>
             </div>
