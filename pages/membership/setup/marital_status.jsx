@@ -24,10 +24,8 @@ export default function AccountType() {
 
   return (
     <>
-<Head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
-</Head>
+
+
 <Modal show={openModal} onClose={() => setOpenModal(false)}>
         <Modal.Header>Setup a new user Marital Status</Modal.Header>
         <Modal.Body>
@@ -84,10 +82,10 @@ export default function AccountType() {
         </Modal.Footer>
       </Modal>
 
-<section class="bg-gray-50 dark:bg-gray-900 sm:p-5 ">
+
     <div class="mx-auto max-w-screen-xl px-4 lg:px-12">
        
-        <div class="bg-white dark:bg-gray-800  shadow-md sm:rounded-lg overflow-hidden p-5">
+        <div class="bg-white dark:bg-gray-800   sm:rounded-lg overflow-hidden">
             <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4">
             
                 <div class="w-full md:w-auto flex flex-col md:flex-row space-y-2 md:space-y-0 items-stretch md:items-center justify-end md:space-x-3 flex-shrink-0">
@@ -133,6 +131,7 @@ export default function AccountType() {
                     </div>
                 </div>
             </div>
+ 
             <div class="overflow-x-auto">
             <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-white uppercase bg-gray-700 dark:bg-gray-700 dark:text-gray-400">
@@ -218,7 +217,7 @@ export default function AccountType() {
             </nav>
         </div>
     </div>
-    </section>
+   
     </>
   )
 }

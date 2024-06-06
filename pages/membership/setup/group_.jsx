@@ -84,10 +84,9 @@ export default function AccountType() {
         </Modal.Footer>
       </Modal>
 
-<section class="bg-gray-50 dark:bg-gray-900 sm:p-5 ">
     <div class="mx-auto max-w-screen-xl px-4 lg:px-12">
        
-        <div class="bg-white dark:bg-gray-800  shadow-md sm:rounded-lg overflow-hidden p-5">
+        <div class="bg-white dark:bg-gray-800  sm:rounded-lg overflow-hidden">
             <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4">
              
                 <div class="w-full md:w-auto flex flex-col md:flex-row space-y-2 md:space-y-0 items-stretch md:items-center justify-end md:space-x-3 flex-shrink-0">
@@ -132,7 +131,14 @@ export default function AccountType() {
                     </div>
                 </div>
             </div>
-            <div class="overflow-x-auto">
+            
+<br /> <br />
+<div className="mt-5">
+
+</div>
+
+         <div className="px-10">
+         <div class="overflow-x-auto">
             <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-white uppercase bg-gray-700 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
@@ -158,7 +164,7 @@ export default function AccountType() {
                     </tbody>
                 </table>
             </div>
-            <nav class="flex mt-3 flex-col md:flex-row md:items-center space-x-2 space-y-3 md:space-y-0 p-4" aria-label="Table navigation">
+            <nav style={{position:'relative'}} class="flex mt-20 flex-col md:flex-row md:items-center space-x-2 space-y-3 md:space-y-0 p-4" aria-label="Table navigation">
             <Button className='bg-gray-600 text-white text-xs' onClick={() => setOpenModal(true)}>
             New
           </Button>
@@ -174,9 +180,9 @@ export default function AccountType() {
           </Button>
             </nav>
 
+         </div>
         </div>
     </div>
-    </section>
     </>
   )
 }

@@ -54,7 +54,7 @@ export default function UserRole() {
 
 
 
-<div class="relative overflow-x-auto">
+<div class="overflow-x-auto">
 <table class="w-full text-xs text-left text-gray-500 dark:text-gray-400">
                     <thead class="text-xs text-white uppercase bg-gray-700 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
@@ -207,7 +207,7 @@ export default function UserRole() {
         </Modal.Footer>
       </Modal>
        
-   <div class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
+   <div class="bg-white dark:bg-gray-800  shadow-md sm:rounded-lg overflow-hidden">
             <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4">
           
                 <div class="w-full md:w-auto flex flex-col md:flex-row space-y-2 md:space-y-0 items-stretch md:items-center justify-end md:space-x-3 flex-shrink-0">
@@ -229,47 +229,54 @@ export default function UserRole() {
                 </div>
             </div>
       
-            <div class="overflow-x-auto">
+<br /> <br />
+<div className="mt-5">
+
+</div>
+
+         <div className="px-10">
+         <div class="overflow-x-auto">
          
-       <br />
-            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                    <thead class="text-xs text-white uppercase bg-gray-700 dark:bg-gray-700 dark:text-gray-400">
-                        <tr>
-                            <th scope="col" class="px-4 py-3">Username</th>
-                            <th scope="col" class="px-4 py-3">Name</th>
+         <br />
+              <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                      <thead class="text-xs text-white uppercase bg-gray-700 dark:bg-gray-700 dark:text-gray-400">
+                          <tr>
+                              <th scope="col" class="px-4 py-3">Username</th>
+                              <th scope="col" class="px-4 py-3">Name</th>
+                            
+                          </tr>
+                      </thead>
+                      <tbody>
+  
                           
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                        
-                        <tr class="border-b dark:border-gray-700">
-                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">jonobote@gmail.com</th>
-                            <td class="px-4 py-3">John Onobote</td>
+                          <tr class="border-b dark:border-gray-700">
+                              <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">jonobote@gmail.com</th>
+                              <td class="px-4 py-3">John Onobote</td>
+                           
+                          </tr>
+                 
+                     
+  
                          
-                        </tr>
-               
-                   
-
-                       
-                    </tbody>
-                </table>
-            </div>
-            <nav class="flex mt-3 flex-col md:flex-row md:items-center space-x-2 space-y-3 md:space-y-0 p-4" aria-label="Table navigation">
+                      </tbody>
+                  </table>
+              </div>
+              <nav class="flex mt-20 flex-col md:flex-row md:items-center space-x-2 space-y-3 md:space-y-0 p-4" aria-label="Table navigation">
+              <Button className='bg-gray-600 text-white text-xs' onClick={() => setOpenModal2(true)}>
+              New
+            </Button>
+            
             <Button className='bg-gray-600 text-white text-xs' onClick={() => setOpenModal2(true)}>
-            New
-          </Button>
-          
-          <Button className='bg-gray-600 text-white text-xs' onClick={() => setOpenModal2(true)}>
-            Edit
-          </Button>
-          <Button className='bg-gray-600 text-white text-xs' onClick={() => setOpenModal2(true)}>
-            Delete
-          </Button>
-          <Button className='bg-gray-100 text-black text-xs' onClick={() => router.back()}>
-            Exit
-          </Button>
-            </nav>
+              Edit
+            </Button>
+            <Button className='bg-gray-600 text-white text-xs' onClick={() => setOpenModal2(true)}>
+              Delete
+            </Button>
+            <Button className='bg-gray-100 text-black text-xs' onClick={() => router.back()}>
+              Exit
+            </Button>
+              </nav>
+         </div>
 
 
         </div>

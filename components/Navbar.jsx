@@ -53,7 +53,7 @@ export default function NavBar() {
       
       </div>
       <div className="px-4  lg:px-8">
-        <nav className="flex items-center justify-between p-4" aria-label="Global"  style={{position:'relative', zIndex:9999}}>
+        <nav className="flex items-center justify-between p-4" aria-label="Global">
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="font-bold text-lg"><Link href={'/'}>Home</Link></span>
@@ -61,10 +61,6 @@ export default function NavBar() {
             </Link>
 
           </div>
-
-       {/* {   <div className='mr-10 font-bold '>
-            <a href="/">Home</a>
-          </div>} */}
           
           <div className="flex lg:hidden">
             <button
@@ -99,16 +95,16 @@ export default function NavBar() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-blue-800 text-white font-light   ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-0 z-10 mt-5 w-56 origin-top-right rounded-md bg-blue-800 text-white font-light   ring-opacity-5 focus:outline-none">
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
              
-                  <Dropdown className="mt-2" dismissOnClick={true} label="User" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                    <Dropdown.Item as={Link} href="/admin/user/">
+                  <Dropdown className="mt-2" dismissOnClick={true} label="User" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                    <Dropdown.Item as={"a"}  href="/admin/user/">
                       User Profile
                     </Dropdown.Item>
-                    <Dropdown.Item as={Link} href="/setup/user/role">
+                    <Dropdown.Item as={"a"} href="/admin/user/role/setup">
                       Roles
                     </Dropdown.Item>
                   </Dropdown> 
@@ -117,17 +113,17 @@ export default function NavBar() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                      <Dropdown className=" ml-5" dismissOnClick={true} label="Membership" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                       <Dropdown.Item as={Link} href="/membership/setup/rank?membership=rank">
+                      <Dropdown className=" ml-5" dismissOnClick={true} label="Membership" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                       <Dropdown.Item as={""} href="/membership/setup/rank?membership=rank">
                          Rank
                        </Dropdown.Item>
-                       <Dropdown.Item as={Link} href="/membership/setup/group?membership=group">
+                       <Dropdown.Item as={""} href="/membership/setup/group_?membership=group">
                          Group
                        </Dropdown.Item>
-                       <Dropdown.Item as={Link} href="/membership/setup/marital_status?membership=marital_status">
+                       <Dropdown.Item as={""} href="/membership/setup/marital_status?membership=marital_status">
                          Marital Status
                        </Dropdown.Item>
-                       <Dropdown.Item as={Link} href="/membership/setup/rank?occupation=occupation">
+                       <Dropdown.Item as={""} href="/membership/setup/rank?occupation=occupation">
                          Occupation
                        </Dropdown.Item>
                      </Dropdown> 
@@ -135,11 +131,11 @@ export default function NavBar() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                  <Dropdown className=" ml-5" dismissOnClick={true} label="Service" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                  <Dropdown.Item as={Link} href="/service/setup/church?service=church">
+                  <Dropdown className=" ml-5" dismissOnClick={true} label="Service" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                  <Dropdown.Item as={""} href="/membership/setup/church?membership=church">
                     Church
                   </Dropdown.Item>
-                  <Dropdown.Item as={Link} href="/service/setup/service?service=service">
+                  <Dropdown.Item as={""} href="/membership/setup/service?service=service">
                     Congregational Gathering
                   </Dropdown.Item>
                
@@ -149,20 +145,20 @@ export default function NavBar() {
         
             <Menu.Item>
               {({ active }) => (
-                  <Dropdown className=" ml-5" dismissOnClick={true} label="Financials" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                  <Dropdown.Item as={Link} href="/financials/setup/fund_channel?financials=fund_channel">
+                  <Dropdown className=" ml-5" dismissOnClick={true} label="Financials" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                  <Dropdown.Item as={""} href="/financials/setup/fund_channel?financials=fund_channel">
                     Fund Channel
                   </Dropdown.Item>
-                  <Dropdown.Item as={Link} href="/financials/setup/bank?financials=bank">
+                  <Dropdown.Item as={""} href="/financials/setup/bank?financials=bank">
                     Bank
                   </Dropdown.Item>
-                  <Dropdown.Item as={Link} href="/financials/setup/loan_account?financials=loan_account">
+                  <Dropdown.Item as={""} href="/financials/setup/loan_account?financials=loan_account">
                    Loan Account
                   </Dropdown.Item>
-                  <Dropdown.Item as={Link} href="/financials/setup/account_type?financials=account_type">
+                  <Dropdown.Item as={""} href="/financials/setup/account_type?financials=account_type">
                     Account Type
                   </Dropdown.Item>
-                  <Dropdown.Item as={Link} href="/financials/setup/expenditure?financials=financials">
+                  <Dropdown.Item as={""} href="/financials/setup/expenditure?financials=financials">
                     Expenditure
                   </Dropdown.Item>
                 </Dropdown> 
@@ -170,14 +166,14 @@ export default function NavBar() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                     <Dropdown className=" ml-5" dismissOnClick={true} label="Events" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                     <Dropdown.Item as={Link} href="/events/setup/event_name?events=event_name">
+                     <Dropdown className=" ml-5" dismissOnClick={true} label="Events" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                     <Dropdown.Item as={""} href="/events/setup/event_name?events=event_name">
                        Event Name
                      </Dropdown.Item>
-                     <Dropdown.Item as={Link} href="/events/setup/formation?events=formation">
+                     <Dropdown.Item as={""} href="/events/setup/formation?events=formation">
                        Formation
                      </Dropdown.Item>
-                     <Dropdown.Item as={Link} href="/events/setup/committee?events=committee">
+                     <Dropdown.Item as={""} href="/events/setup/committee?events=committee">
                       Committee
                      </Dropdown.Item>
              
@@ -187,14 +183,14 @@ export default function NavBar() {
         
             <Menu.Item>
               {({ active }) => ( 
-                  <Dropdown className=" ml-5" dismissOnClick={true} label="Departments" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                  <Dropdown.Item as={Link} href="#">
+                  <Dropdown className=" ml-5" dismissOnClick={true} label="Departments" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                  <Dropdown.Item as={""} href="#">
                     Coordinator
                   </Dropdown.Item>
-                  <Dropdown.Item as={Link} href="#">
+                  <Dropdown.Item as={""} href="#">
                     Head of department
                   </Dropdown.Item>
-                  <Dropdown.Item as={Link} href="#">
+                  <Dropdown.Item as={""} href="#">
                     Units
                   </Dropdown.Item>
 
@@ -236,20 +232,20 @@ export default function NavBar() {
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
-                  <Dropdown className=" ml-5" dismissOnClick={true} label="Membership" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                  <Dropdown.Item as={Link} href="/membership/setup/personal?membership=personal">
+                  <Dropdown className=" ml-5" dismissOnClick={true} label="Membership" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                  <Dropdown.Item as={""} href="/membership/setup/personal?membership=personal">
                     Personal
                   </Dropdown.Item>
-                  <Dropdown.Item as={Link} href="/membership/setup/birth?membership=birth">
+                  <Dropdown.Item as={""} href="/membership/setup/birth?membership=birth">
                     Birth
                   </Dropdown.Item>
-                  <Dropdown.Item as={Link} href="/membership/setup/death?membership=death">
+                  <Dropdown.Item as={""} href="/membership/setup/death?membership=death">
                    Death
                   </Dropdown.Item>
-                  <Dropdown.Item as={Link} href="/membership/setup/anointment?membership=anointment">
+                  <Dropdown.Item as={""} href="/membership/setup/anointment?membership=anointment">
                     Anointment
                   </Dropdown.Item>
-                  <Dropdown.Item as={Link} href="/membership/setup/group?membership=group">
+                  <Dropdown.Item as={""} href="/membership/setup/group?membership=group">
                    Group
                   </Dropdown.Item>
           
@@ -259,8 +255,8 @@ export default function NavBar() {
          
             <Menu.Item>
               {({ active }) => (
-                <Dropdown className=" ml-5" dismissOnClick={true} label="Service" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                <Dropdown.Item as={Link} href="/service/operations/attendance?service=attendance">
+                <Dropdown className=" ml-5" dismissOnClick={true} label="Service" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                <Dropdown.Item as={""} href="/service/operations/attendance?service=attendance">
                   Attendance
                 </Dropdown.Item>
 
@@ -270,14 +266,14 @@ export default function NavBar() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-              <Dropdown className=" ml-5" dismissOnClick={true} label="Financials" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-              <Dropdown.Item as={Link} href="/financials/operations/income?financials=income">
+              <Dropdown className=" ml-5" dismissOnClick={true} label="Financials" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+              <Dropdown.Item as={""} href="/financials/operations/income?financials=income">
                 Income
               </Dropdown.Item>
-              <Dropdown.Item as={Link} href="/financials/operations/expenditure?financials=expenditure">
+              <Dropdown.Item as={""} href="/financials/operations/expenditure?financials=expenditure">
                 Expenditure
               </Dropdown.Item>
-              <Dropdown.Item as={Link} href="/financials/operations/committee?financials=committee">
+              <Dropdown.Item as={""} href="/financials/operations/committee?financials=committee">
                Committee
               </Dropdown.Item>
            
@@ -287,17 +283,17 @@ export default function NavBar() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Dropdown className=" ml-5" dismissOnClick={true} label="Document Management" placement='right' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                <Dropdown.Item as={Link} href="/document_management/reports?document_management=reports">
+                <Dropdown className=" ml-5" dismissOnClick={true} label="Document Management" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                <Dropdown.Item as={""} href="/document_management/reports?document_management=reports">
                   Reports
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} href="/document_management/service_announcements?document_management=service_announcements">
+                <Dropdown.Item as={""} href="/document_management/service_announcements?document_management=service_announcements">
                   Service Announcements
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} href="/document_management/meetings?document_management=meetings">
+                <Dropdown.Item as={""} href="/document_management/meetings?document_management=meetings">
                  Meetings
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} href="/document_management/sermon?document_management=sermon">
+                <Dropdown.Item as={""} href="/document_management/sermon?document_management=sermon">
                   Sermon
                 </Dropdown.Item>
               
