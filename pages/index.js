@@ -21,7 +21,7 @@ export default function Home() {
         <img src="/images/building.png" className="" style={{height:180}}/>
         </div>
         <br/>
-        <Link href="/admin/setup/" class="inline-flex justify-center items-center py-3 px-5  text-xs text-center bg-blue-900 text-white  rounded-lg hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+        <Link href="/accounts/signup" class="inline-flex justify-center items-center py-3 px-5  text-xs text-center bg-blue-900 text-white  rounded-lg hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                Get Started
               
             </Link>

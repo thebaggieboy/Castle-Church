@@ -476,12 +476,12 @@ export default function NavBar() {
 
           
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="/accounts/signup" className="text-sm font-semibold leading-6  text-white">
+            <Link href="/accounts/signup" className="text-sm font-semibold leading-6  text-white">
               Signup 
-            </a>
-            <a href="/accounts/login" className="ml-10 text-sm font-semibold leading-6  text-white">
+            </Link>
+            <Link href="/accounts/login" className="ml-10 text-sm font-semibold leading-6  text-white">
               Login 
-            </a>
+            </Link>
           </div>
         </nav>
 
