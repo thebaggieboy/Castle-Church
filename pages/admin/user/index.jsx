@@ -68,8 +68,11 @@ export default function members() {
   
    const [isMember , setIsMember] = useState(false)
    const [isNonMember , setIsNonMember] = useState(false)
+   const [isMember2 , setIsMember2] = useState(false)
+   const [isNonMember2 , setIsNonMember2] = useState(false)
    const [memberType, setMemberType] = useState('')
 
+   const [memberType2, setMemberType2] = useState('')
    const memberChange = (e) => {
        const { checked, value } = e.target;
        if (checked) {
@@ -97,6 +100,33 @@ export default function members() {
         } 
       }
       
+      const memberChange2 = (e) => {
+        const { checked, value } = e.target;
+        if (checked) {
+            setIsMember2(true)
+            setMemberType2(e.target.value)
+            console.log("Value: ", e.target.value)
+            console.log("Member Type: ", memberType2)
+        } else {
+            setIsMember2(false)
+            setMemberType2('')
+        } 
+      }
+      
+       
+      const nonMemberChange2 = (e) => {
+         const { checked, value } = e.target;
+         if (checked) {
+             setIsNonMember2(true)
+             setMemberType(e.target.value)
+             console.log("Value: ", e.target.value)
+             console.log("Non Member Type: ", memberType2)
+         } else {
+             setIsNonMember2(false)
+             setMemberType2('')
+         } 
+       }
+       
 
        async function fetchUsers(){
         const res = await fetch('http://localhost:5000/users', {
@@ -118,6 +148,9 @@ export default function members() {
     }
        
 fetchUsers()
+
+const USERS = 'SELECT * FROM user_tab WHERE '
+ 
 
 
   return (
@@ -239,18 +272,18 @@ fetchUsers()
             <div class="w-full">
             <div class="flex items-center h-5">   
         <label for="remember" class="ms-2 mr-2 text-xs font-medium text-gray-900 dark:text-gray-300">Member</label>  
-          <input id="remember" style={{borderRadius:100}} type="radio" name='radio' value="member" onChange={memberChange} class="w-4 pl-2 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"  />
+          <input id="remember" style={{borderRadius:100}} type="radio" name='radio' value="member" onChange={memberChange2} class="w-4 pl-2 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"  />
           <label for="remember" class="ms-2 mr-2 text-xs font-medium text-gray-900 dark:text-gray-300">Non Member</label>
-          <input id="remember" style={{borderRadius:100}}  type="radio"  name='radio' value="non_member" onChange={nonMemberChange}  class="w-4 h-4  pl-2 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"  />
+          <input id="remember" style={{borderRadius:100}}  type="radio"  name='radio' value="non_member" onChange={nonMemberChange2}  class="w-4 h-4  pl-2 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"  />
        </div> <br />
           
                 </div>
                 
-                <div class={`sm:col-span-2 ${memberType == 'member' ? 'block' :  'hidden'}`}>
+                <div class={`sm:col-span-2 ${memberType2 == 'member' ? 'block' :  'hidden'}`}>
                 <label for="name" class=" mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Username: </label>
                     <input type="email" name="name" id="name" class=" inline bg-gray-50 border border-gray-300 text-gray-900 text-xs h-7 focus:ring-primary-600 focus:border-primary-600 block  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
                    
-                {memberType == 'member' ? 
+                {memberType2 == 'member' ? 
                 <div>
                     <br />
 
@@ -262,14 +295,14 @@ fetchUsers()
  
                 <br />
 
-                {memberType == 'member' ? <>
+                {memberType2 == 'member' ? <>
                     <div className=''>
                     <label for="name" class=" mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Membership No: </label>
                     <input type="text" name="name" id="name" class=" inline bg-gray-50 border border-gray-300 text-gray-900 text-xs h-7 focus:ring-primary-600 focus:border-primary-600 block l dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
                     </div>
                 </> : ""}
 
-                {memberType == 'non_member' ? <>
+                {memberType2 == 'non_member' ? <>
                     <div className=''>
                     <label for="name" class=" mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Name: </label>
                     <input type="text" name="name" id="name" class=" inline bg-gray-50 border border-gray-300 text-gray-900 text-xs h-7 focus:ring-primary-600 focus:border-primary-600 block l dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
@@ -278,11 +311,11 @@ fetchUsers()
                 </div>
              
             
-                <div class={`sm:col-span-2 ${memberType == 'non_member' ? 'block' :  'hidden'}`}>
+                <div class={`sm:col-span-2 ${memberType2 == 'non_member' ? 'block' :  'hidden'}`}>
                 <label for="name" class=" mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Username: </label>
                     <input type="email" name="name" id="name" class=" inline bg-gray-50 border border-gray-300 text-gray-900 text-xs h-7 focus:ring-primary-600 focus:border-primary-600 block  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
                    
-                {memberType == 'non_member' ? 
+                {memberType2 == 'non_member' ? 
                 <div>
                     <br />
 

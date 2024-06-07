@@ -101,10 +101,10 @@ export default function NavBar() {
               {({ active }) => (
              
                   <Dropdown  renderTrigger={() => <div className='text-center p-2' style={{cursor:'pointer' }}>User</div>}  className="mt-2 bg-blue-800 text-white" dismissOnClick={true} label="User" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                    <Dropdown.Item as={"a"} className='text-white hover:text-black'  href="/admin/user/">
+                    <Dropdown.Item as={"a"} className='text-white text-xs hover:text-black'  href="/admin/user/">
                       User Profile
                     </Dropdown.Item>
-                    <Dropdown.Item as={"a"} className='text-white hover:text-black'  href="/admin/user/role/setup">
+                    <Dropdown.Item as={"a"} className='text-white text-xs hover:text-black'  href="/admin/user/role/setup">
                       Roles
                     </Dropdown.Item>
                   </Dropdown> 
