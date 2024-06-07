@@ -94,7 +94,7 @@ Continue
     
        <p class="mb-3 font-normal  text-xs dark:text-gray-400">Setup ranks of different members.</p> <br />
        <Link href="/membership/setup/rank" class="inline-flex items-center px-3 py-1 text-xs font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-gray-600 dark:focus:ring-blue-800">
-Continue       
+   	   Continue       
        </Link>
    </div>
 

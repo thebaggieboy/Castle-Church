@@ -74,7 +74,7 @@ export default function NavBar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
 
-<Menu as="div" className="relative inline-block text-left ml-5">
+<Menu as="div" className="relative inline-block text-left ml-1">
 
       
   
@@ -95,16 +95,16 @@ export default function NavBar() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-5 w-56 origin-top-right rounded-md bg-blue-800 text-white font-light   ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-blue-800 text-white font-light   ring-opacity-5 focus:outline-none">
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
              
-                  <Dropdown className="mt-2" dismissOnClick={true} label="User" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                    <Dropdown.Item as={"a"}  href="/admin/user/">
+                  <Dropdown  renderTrigger={() => <div className='text-center p-2' style={{cursor:'pointer' }}>User</div>}  className="mt-2 bg-blue-800 text-white" dismissOnClick={true} label="User" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                    <Dropdown.Item as={"a"} className='text-white hover:text-black'  href="/admin/user/">
                       User Profile
                     </Dropdown.Item>
-                    <Dropdown.Item as={"a"} href="/admin/user/role/setup">
+                    <Dropdown.Item as={"a"} className='text-white hover:text-black'  href="/admin/user/role/setup">
                       Roles
                     </Dropdown.Item>
                   </Dropdown> 
@@ -113,17 +113,17 @@ export default function NavBar() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                      <Dropdown className=" ml-5" dismissOnClick={true} label="Membership" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                       <Dropdown.Item as={""} href="/membership/setup/rank?membership=rank">
+                      <Dropdown   renderTrigger={() => <div className='text-center  p-2' style={{cursor:'pointer'}}>Membership</div>}  className=" ml-1 bg-blue-800" dismissOnClick={true} label="Membership" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                       <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/rank?membership=rank">
                          Rank
                        </Dropdown.Item>
-                       <Dropdown.Item as={""} href="/membership/setup/group_?membership=group">
+                       <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/group_?membership=group">
                          Group
                        </Dropdown.Item>
-                       <Dropdown.Item as={""} href="/membership/setup/marital_status?membership=marital_status">
+                       <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/marital_status?membership=marital_status">
                          Marital Status
                        </Dropdown.Item>
-                       <Dropdown.Item as={""} href="/membership/setup/rank?occupation=occupation">
+                       <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/rank?occupation=occupation">
                          Occupation
                        </Dropdown.Item>
                      </Dropdown> 
@@ -131,11 +131,11 @@ export default function NavBar() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                  <Dropdown className=" ml-5" dismissOnClick={true} label="Service" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                  <Dropdown.Item as={""} href="/membership/setup/church?membership=church">
+                  <Dropdown  renderTrigger={() => <div className='text-center  p-2' style={{cursor:'pointer'}}>Service</div>}  className=" ml-1 bg-blue-800" dismissOnClick={true} label="Service" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                  <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/church?membership=church">
                     Church
                   </Dropdown.Item>
-                  <Dropdown.Item as={""} href="/membership/setup/service?service=service">
+                  <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/service?service=service">
                     Congregational Gathering
                   </Dropdown.Item>
                
@@ -145,20 +145,23 @@ export default function NavBar() {
         
             <Menu.Item>
               {({ active }) => (
-                  <Dropdown className=" ml-5" dismissOnClick={true} label="Financials" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                  <Dropdown.Item as={""} href="/financials/setup/fund_channel">
+                  <Dropdown renderTrigger={() => <div className='text-center  p-2' style={{cursor:'pointer'}}>Financials</div>} className=" ml-1 bg-blue-800" dismissOnClick={true} label="Financials" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto",  MozAppearance:'none' }}>
+                  <Dropdown.Item as={""} className='text-white hover:text-black'  href="/financials/setup/fund_channel">
                     Fund Channel
                   </Dropdown.Item>
-                  <Dropdown.Item as={""} href="/financials/setup/banks">
+                  <Dropdown.Item as={""} className='text-white hover:text-black'  href="/financials/setup/banks">
                     Bank
                   </Dropdown.Item>
-                  <Dropdown.Item as={""} href="/financials/setup/loan_account">
+                  <Dropdown.Item as={""} className='text-white hover:text-black'  href="/financials/setup/budget">
+                    Budget
+                  </Dropdown.Item>
+                  <Dropdown.Item as={""} className='text-white hover:text-black'  href="/financials/setup/loan_account">
                    Loan Account
                   </Dropdown.Item>
-                  <Dropdown.Item as={""} href="/financials/setup/account_type">
+                  <Dropdown.Item as={""} className='text-white hover:text-black'  href="/financials/setup/account_type">
                     Account Type
                   </Dropdown.Item>
-                  <Dropdown.Item as={""} href="/financials/setup/expenditure">
+                  <Dropdown.Item as={""} className='text-white hover:text-black'  href="/financials/setup/expenditure">
                     Expenditure
                   </Dropdown.Item>
                 </Dropdown> 
@@ -166,14 +169,14 @@ export default function NavBar() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                     <Dropdown className=" ml-5" dismissOnClick={true} label="Events" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                     <Dropdown.Item as={""} href="/events/setup/event_name?events=event_name">
+                     <Dropdown  renderTrigger={() => <div className='text-center  p-2' style={{cursor:'pointer'}}>Events</div>}  className=" ml-1 bg-blue-800" dismissOnClick={true} label="Events" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                     <Dropdown.Item as={""} className='text-white hover:text-black'  href="/events/setup/event_name?events=event_name">
                        Event Name
                      </Dropdown.Item>
-                     <Dropdown.Item as={""} href="/events/setup/formation?events=formation">
+                     <Dropdown.Item as={""} className='text-white hover:text-black'  href="/events/setup/formation?events=formation">
                        Formation
                      </Dropdown.Item>
-                     <Dropdown.Item as={""} href="/events/setup/committee?events=committee">
+                     <Dropdown.Item as={""} className='text-white hover:text-black'  href="/events/setup/committee?events=committee">
                       Committee
                      </Dropdown.Item>
              
@@ -183,14 +186,14 @@ export default function NavBar() {
         
             <Menu.Item>
               {({ active }) => ( 
-                  <Dropdown className=" ml-5" dismissOnClick={true} label="Departments" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                  <Dropdown.Item as={""} href="#">
+                  <Dropdown  renderTrigger={() => <div className='text-center  p-2' style={{cursor:'pointer'}}>Departments</div>}  className=" ml-1 bg-blue" dismissOnClick={true} label="Departments" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                  <Dropdown.Item as={""} className='text-white hover:text-black'  href="#">
                     Coordinator
                   </Dropdown.Item>
-                  <Dropdown.Item as={""} href="#">
+                  <Dropdown.Item as={""} className='text-white hover:text-black'  href="#">
                     Head of department
                   </Dropdown.Item>
-                  <Dropdown.Item as={""} href="#">
+                  <Dropdown.Item as={""} className='text-white hover:text-black'  href="#">
                     Units
                   </Dropdown.Item>
 
@@ -228,24 +231,24 @@ export default function NavBar() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-blue-800 text-white    ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-blue-800 text-white  font-light    ring-opacity-5 focus:outline-none">
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
-                  <Dropdown className=" ml-5" dismissOnClick={true} label="Membership" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                  <Dropdown.Item as={""} href="/membership/setup/personal?membership=personal">
+                  <Dropdown   renderTrigger={() => <div className='text-center  p-2' style={{cursor:'pointer'}}>Membership</div>} className=" ml-1 bg-blue-800 bg-blue-800" dismissOnClick={true} label="Membership" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                  <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/personal?membership=personal">
                     Personal
                   </Dropdown.Item>
-                  <Dropdown.Item as={""} href="/membership/setup/birth?membership=birth">
+                  <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/birth?membership=birth">
                     Birth
                   </Dropdown.Item>
-                  <Dropdown.Item as={""} href="/membership/setup/death?membership=death">
+                  <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/death?membership=death">
                    Death
                   </Dropdown.Item>
-                  <Dropdown.Item as={""} href="/membership/setup/anointment?membership=anointment">
+                  <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/anointment?membership=anointment">
                     Anointment
                   </Dropdown.Item>
-                  <Dropdown.Item as={""} href="/membership/setup/group?membership=group">
+                  <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/group?membership=group">
                    Group
                   </Dropdown.Item>
           
@@ -255,8 +258,8 @@ export default function NavBar() {
          
             <Menu.Item>
               {({ active }) => (
-                <Dropdown className=" ml-5" dismissOnClick={true} label="Service" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                <Dropdown.Item as={""} href="/service/operations/attendance?service=attendance">
+                <Dropdown   renderTrigger={() => <div className='text-center  p-2' style={{cursor:'pointer'}}>Service</div>}className=" ml-1 bg-blue-800" dismissOnClick={true} label="Service" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                <Dropdown.Item as={""} className='text-white hover:text-black'  href="/service/operations/attendance?service=attendance">
                   Attendance
                 </Dropdown.Item>
 
@@ -266,34 +269,34 @@ export default function NavBar() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-              <Dropdown className=" ml-5" dismissOnClick={true} label="Financials" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-              <Dropdown.Item as={""} href="/financials/operations/income?financials=income">
+              <Dropdown  renderTrigger={() => <div className='text-center  p-2' style={{cursor:'pointer'}}>Financials</div>} className=" ml-1 bg-blue-800" dismissOnClick={true} label="Financials" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+              <Dropdown.Item as={""} className='text-white hover:text-black'  href="/financials/operations/income?financials=income">
                 Income
               </Dropdown.Item>
-              <Dropdown.Item as={""} href="/financials/operations/expenditure?financials=expenditure">
+              <Dropdown.Item as={""} className='text-white hover:text-black'  href="/financials/operations/expenditure?financials=expenditure">
                 Expenditure
               </Dropdown.Item>
-              <Dropdown.Item as={""} href="/financials/operations/committee?financials=committee">
+              <Dropdown.Item as={""} className='text-white hover:text-black'  href="/financials/operations/committee?financials=committee">
                Committee
               </Dropdown.Item>
-           
+            
        
             </Dropdown> 
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Dropdown className=" ml-5" dismissOnClick={true} label="Document Management" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
-                <Dropdown.Item as={""} href="/document_management/reports?document_management=reports">
+                <Dropdown  renderTrigger={() => <div className='text-center  p-2' style={{cursor:'pointer'}}>Document Management</div>} className=" ml-1 " dismissOnClick={true} label="Document Management" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                <Dropdown.Item as={""} className='text-white hover:text-black'  href="/document_management/reports?document_management=reports">
                   Reports
                 </Dropdown.Item>
-                <Dropdown.Item as={""} href="/document_management/service_announcements?document_management=service_announcements">
+                <Dropdown.Item as={""} className='text-white hover:text-black'  href="/document_management/service_announcements?document_management=service_announcements">
                   Service Announcements
                 </Dropdown.Item>
-                <Dropdown.Item as={""} href="/document_management/meetings?document_management=meetings">
+                <Dropdown.Item as={""} className='text-white hover:text-black'  href="/document_management/meetings?document_management=meetings">
                  Meetings
                 </Dropdown.Item>
-                <Dropdown.Item as={""} href="/document_management/sermon?document_management=sermon">
+                <Dropdown.Item as={""} className='text-white hover:text-black'  href="/document_management/sermon?document_management=sermon">
                   Sermon
                 </Dropdown.Item>
               
@@ -502,13 +505,14 @@ export default function NavBar() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
-                <Menu as="div" className="relative inline-block text-left">
+                <Menu as="div" className="relative inline-block text-left ml-1">
 
       
   
 <div>
+  
   <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold  text-white ">
-    Admin
+    Setup
     <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
   </Menu.Button>
 </div>
@@ -522,144 +526,225 @@ export default function NavBar() {
   leaveFrom="transform opacity-100 scale-100"
   leaveTo="transform opacity-0 scale-95"
 >
-  <Menu.Items className="absolute right-0 z-10 mt-2 w-24 origin-top-right rounded-md bg-blue-800   ring-opacity-5 focus:outline-none">
+  <Menu.Items className="absolute right-0 z-10 mt-2  origin-top-right rounded-md bg-blue-800 text-white font-light   ring-opacity-5 focus:outline-none">
     <div className="py-1">
       <Menu.Item>
         {({ active }) => (
-          <a
-            href="/admin/setup/"
-            className={ active ? 'bg-gray-100  text-white' : 'text-gray-700','block px-4 py-2 text-sm' }
-          >
-            Setup
-          </a>
+       
+            <Dropdown  renderTrigger={() => <div className='text-center p-2' style={{cursor:'pointer' }}>User</div>}  className="mt-2 bg-blue-800 text-white" dismissOnClick={true} label="User" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+              <Dropdown.Item as={"a"} className='text-white hover:text-black'  href="/admin/user/">
+                User Profile
+              </Dropdown.Item>
+              <Dropdown.Item as={"a"} className='text-white hover:text-black'  href="/admin/user/role/setup">
+                Roles
+              </Dropdown.Item>
+            </Dropdown> 
+       
         )}
       </Menu.Item>
       <Menu.Item>
         {({ active }) => (
-          <a
-            href="/backup/"
-            className={
-              active ? 'bg-gray-100  text-white' : 'text-gray-700',
-              'block px-4 py-2 text-sm'
-         }
-          >
-            Backup
-          </a>
+                <Dropdown   renderTrigger={() => <div className='text-center  p-2' style={{cursor:'pointer'}}>Membership</div>}  className=" ml-1 bg-blue-800" dismissOnClick={true} label="Membership" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                 <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/rank?membership=rank">
+                   Rank
+                 </Dropdown.Item>
+                 <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/group_?membership=group">
+                   Group
+                 </Dropdown.Item>
+                 <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/marital_status?membership=marital_status">
+                   Marital Status
+                 </Dropdown.Item>
+                 <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/rank?occupation=occupation">
+                   Occupation
+                 </Dropdown.Item>
+               </Dropdown> 
         )}
       </Menu.Item>
       <Menu.Item>
         {({ active }) => (
-          <a
-            href="#"
-            className={
-              active ? 'bg-gray-100  text-white' : 'text-gray-700',
-              'block px-4 py-2 text-sm'
-            }
-          >
-            Securtity
-          </a>
+            <Dropdown  renderTrigger={() => <div className='text-center  p-2' style={{cursor:'pointer'}}>Service</div>}  className=" ml-1 bg-blue-800" dismissOnClick={true} label="Service" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+            <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/church?membership=church">
+              Church
+            </Dropdown.Item>
+            <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/service?service=service">
+              Congregational Gathering
+            </Dropdown.Item>
+         
+          </Dropdown> 
         )}
       </Menu.Item>
+  
+      <Menu.Item>
+        {({ active }) => (
+            <Dropdown renderTrigger={() => <div className='text-center  p-2' style={{cursor:'pointer'}}>Financials</div>} className=" ml-1 bg-blue-800" dismissOnClick={true} label="Financials" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto",  MozAppearance:'none' }}>
+            <Dropdown.Item as={""} className='text-white hover:text-black'  href="/financials/setup/fund_channel">
+              Fund Channel
+            </Dropdown.Item>
+            <Dropdown.Item as={""} className='text-white hover:text-black'  href="/financials/setup/banks">
+              Bank
+            </Dropdown.Item>
+            <Dropdown.Item as={""} className='text-white hover:text-black'  href="/financials/setup/budget">
+              Budget
+            </Dropdown.Item>
+            <Dropdown.Item as={""} className='text-white hover:text-black'  href="/financials/setup/loan_account">
+             Loan Account
+            </Dropdown.Item>
+            <Dropdown.Item as={""} className='text-white hover:text-black'  href="/financials/setup/account_type">
+              Account Type
+            </Dropdown.Item>
+            <Dropdown.Item as={""} className='text-white hover:text-black'  href="/financials/setup/expenditure">
+              Expenditure
+            </Dropdown.Item>
+          </Dropdown> 
+        )}
+      </Menu.Item>
+      <Menu.Item>
+        {({ active }) => (
+               <Dropdown  renderTrigger={() => <div className='text-center  p-2' style={{cursor:'pointer'}}>Events</div>}  className=" ml-1 bg-blue-800" dismissOnClick={true} label="Events" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+               <Dropdown.Item as={""} className='text-white hover:text-black'  href="/events/setup/event_name?events=event_name">
+                 Event Name
+               </Dropdown.Item>
+               <Dropdown.Item as={""} className='text-white hover:text-black'  href="/events/setup/formation?events=formation">
+                 Formation
+               </Dropdown.Item>
+               <Dropdown.Item as={""} className='text-white hover:text-black'  href="/events/setup/committee?events=committee">
+                Committee
+               </Dropdown.Item>
+       
+             </Dropdown> 
+        )}
+      </Menu.Item>
+  
+      <Menu.Item>
+        {({ active }) => ( 
+            <Dropdown  renderTrigger={() => <div className='text-center  p-2' style={{cursor:'pointer'}}>Departments</div>}  className=" ml-1 bg-blue" dismissOnClick={true} label="Departments" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+            <Dropdown.Item as={""} className='text-white hover:text-black'  href="#">
+              Coordinator
+            </Dropdown.Item>
+            <Dropdown.Item as={""} className='text-white hover:text-black'  href="#">
+              Head of department
+            </Dropdown.Item>
+            <Dropdown.Item as={""} className='text-white hover:text-black'  href="#">
+              Units
+            </Dropdown.Item>
+
+          </Dropdown> 
+        )}
+        
+      </Menu.Item>
+  
+
+    </div>
+  </Menu.Items>
+</Transition>
+
+
+</Menu>
+
+
+<Menu as="div" className="relative inline-block  text-left">
+
+
+
+<div>
+  <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold  text-white ">
+    Operations
+    <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
+  </Menu.Button>
+</div>
+
+<Transition
+  as={Fragment}
+  enter="transition ease-out duration-100"
+  enterFrom="transform opacity-0 scale-95"
+  enterTo="transform opacity-100 scale-100"
+  leave="transition ease-in duration-75"
+  leaveFrom="transform opacity-100 scale-100"
+  leaveTo="transform opacity-0 scale-95"
+>
+  <Menu.Items className="absolute right-0 z-10 mt-2  origin-top-right rounded-md bg-blue-800 text-white  font-light    ring-opacity-5 focus:outline-none">
+    <div className="py-1">
+      <Menu.Item>
+        {({ active }) => (
+            <Dropdown   renderTrigger={() => <div className='text-center  p-2' style={{cursor:'pointer'}}>Membership</div>} className=" ml-1 bg-blue-800 bg-blue-800" dismissOnClick={true} label="Membership" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+            <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/personal?membership=personal">
+              Personal
+            </Dropdown.Item>
+            <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/birth?membership=birth">
+              Birth
+            </Dropdown.Item>
+            <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/death?membership=death">
+             Death
+            </Dropdown.Item>
+            <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/anointment?membership=anointment">
+              Anointment
+            </Dropdown.Item>
+            <Dropdown.Item as={""} className='text-white hover:text-black'  href="/membership/setup/group?membership=group">
+             Group
+            </Dropdown.Item>
     
-    
+          </Dropdown> 
+        )}
+      </Menu.Item>
+   
+      <Menu.Item>
+        {({ active }) => (
+          <Dropdown   renderTrigger={() => <div className='text-center  p-2' style={{cursor:'pointer'}}>Service</div>}className=" ml-1 bg-blue-800" dismissOnClick={true} label="Service" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+          <Dropdown.Item as={""} className='text-white hover:text-black'  href="/service/operations/attendance?service=attendance">
+            Attendance
+          </Dropdown.Item>
+
+  
+        </Dropdown> 
+        )}
+      </Menu.Item>
+      <Menu.Item>
+        {({ active }) => (
+        <Dropdown  renderTrigger={() => <div className='text-center  p-2' style={{cursor:'pointer'}}>Financials</div>} className=" ml-1 bg-blue-800" dismissOnClick={true} label="Financials" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+        <Dropdown.Item as={""} className='text-white hover:text-black'  href="/financials/operations/income?financials=income">
+          Income
+        </Dropdown.Item>
+        <Dropdown.Item as={""} className='text-white hover:text-black'  href="/financials/operations/expenditure?financials=expenditure">
+          Expenditure
+        </Dropdown.Item>
+        <Dropdown.Item as={""} className='text-white hover:text-black'  href="/financials/operations/committee?financials=committee">
+         Committee
+        </Dropdown.Item>
+      
+ 
+      </Dropdown> 
+        )}
+      </Menu.Item>
+      <Menu.Item>
+        {({ active }) => (
+          <Dropdown  renderTrigger={() => <div className='text-center  p-2' style={{cursor:'pointer'}}>Document Management</div>} className=" ml-1 " dismissOnClick={true} label="Document Management" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+          <Dropdown.Item as={""} className='text-white hover:text-black'  href="/document_management/reports?document_management=reports">
+            Reports
+          </Dropdown.Item>
+          <Dropdown.Item as={""} className='text-white hover:text-black'  href="/document_management/service_announcements?document_management=service_announcements">
+            Service Announcements
+          </Dropdown.Item>
+          <Dropdown.Item as={""} className='text-white hover:text-black'  href="/document_management/meetings?document_management=meetings">
+           Meetings
+          </Dropdown.Item>
+          <Dropdown.Item as={""} className='text-white hover:text-black'  href="/document_management/sermon?document_management=sermon">
+            Sermon
+          </Dropdown.Item>
+        
+        </Dropdown> 
+        )}
+      </Menu.Item>
   
     </div>
   </Menu.Items>
 </Transition>
 
 
-</Menu> <br />
-    <Menu as="div" className="relative inline-block text-left">
+</Menu>
 
-      
-  
-      <div>
-        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold  text-white ">
-          Operations
-          <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
-        </Menu.Button>
-      </div>
 
-      <Transition
-        as={Fragment}
-        enter="transition ease-out duration-100"
-        enterFrom="transform opacity-0 scale-95"
-        enterTo="transform opacity-100 scale-100"
-        leave="transition ease-in duration-75"
-        leaveFrom="transform opacity-100 scale-100"
-        leaveTo="transform opacity-0 scale-95"
-      >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-34 origin-top-right rounded-md bg-blue-800    ring-opacity-5 focus:outline-none">
-          <div className="py-1">
-            <Menu.Item>
-              {({ active }) => (
-                <a
-                  href="/operations/membership/"
-                  className={ active ? 'bg-gray-100  text-white' : 'text-gray-700','block px-4 py-2 text-sm' }
-                >
-                  Membership
-                </a>
-              )}
-            </Menu.Item>
-            <Menu.Item>
-              {({ active }) => (
-                <a
-                  href="/service/operations/"
-                  className={
-                    active ? 'bg-gray-100  text-white' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-               }
-                >
-                  Service
-                </a>
-              )}
-            </Menu.Item>
-            <Menu.Item>
-              {({ active }) => (
-                <a
-                  href="/financials/operations/"
-                  className={
-                    active ? 'bg-gray-100  text-white' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  }
-                >
-                  Financials
-                </a>
-              )}
-            </Menu.Item>
-            <Menu.Item>
-              {({ active }) => (
-                <a
-                  href="/docuement_management/operations/"
-                  className={
-                    active ? 'bg-gray-100  text-white' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  }
-                >
-                  Document Management
-                </a>
-              )}
-            </Menu.Item>
-            <Menu.Item>
-              {({ active }) => (
-                <a
-                  href="/operations/units/"
-                  className={
-                    active ? 'bg-gray-100  text-white' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  }
-                >
-                  Units
-                </a>
-              )}
-            </Menu.Item>
-        
-          </div>
-        </Menu.Items>
-      </Transition>
 
-      
-    </Menu> <br />
+
     <Menu as="div" className="relative inline-block text-left">
 
       
