@@ -11,26 +11,6 @@ import { useRouter } from 'next/router';
 
 
 
-
-
-const dummyUsers = [
-    {
-        id:1,
-        name:"John Onobote",
-        membershipNo:1212
-    },
-    {
-        id:2,
-        name:"David Okunoye",
-        membershipNo:1213
-    },
-    {
-        id:3,
-        name:"Daniel Williams",
-        membershipNo:1214
-    },
-]
-
 export  function NoneMemberForm() {
 
     return(
@@ -76,7 +56,7 @@ export default function members() {
    const [isNonMember3 , setIsNonMember3] = useState(false)
    const [memberType, setMemberType] = useState('')
 
-
+   const [users, setUsers] = useState([])
    const [memberType2, setMemberType2] = useState('')
    const [memberType3, setMemberType3] = useState('')
    const memberChange = (e) => {
@@ -149,6 +129,7 @@ export default function members() {
         })
         const data = await res.json()
         console.log("Users: ", data)
+        setUsers(data)
        
     
       
@@ -160,8 +141,8 @@ export default function members() {
        
 fetchUsers()
 
-const USERS = 'SELECT * FROM user_tab WHERE '
- 
+const USERS = 'SELECT * FROM user_tab '
+
 
 
   return (
@@ -185,7 +166,7 @@ const USERS = 'SELECT * FROM user_tab WHERE '
 </div>
 
             <div class="overflow-x-auto">
-            <div class="flex items-center h-5 mt-10 ml-5">   
+            <div class="flex items-center h-5  ml-5">   
         <label for="remember" class="ms-2 mr-2 text-xs font-medium text-gray-900 dark:text-gray-300">Member</label>  
           <input id="remember" style={{borderRadius:100}} type="radio" name='radio' value="member" onChange={memberChange} class="w-4 pl-2 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"  />
           <label for="remember" class="ms-2 mr-2 text-xs font-medium text-gray-900 dark:text-gray-300">Non Member</label>
@@ -202,13 +183,15 @@ const USERS = 'SELECT * FROM user_tab WHERE '
                     </thead>
                     <tbody>
 
-                        
-                        <tr class="border-b dark:border-gray-700">
-                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">jonobote@gmail.com</th>
-                            <td class="px-4 py-3">John Onobote</td>
-                            <td class="px-4 py-3">111</td>
-                         
-                        </tr>
+                   {users.map(user=>(
+                     <tr class="border-b dark:border-gray-700">
+                     <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">{user.username}</th>
+                     <td class="px-4 py-3">{user.non_member_name == "" || user.non_member_name == null ? "" : user.non_member_name } </td>
+                     <td class="px-4 py-3">{user.membership_no}</td>
+                  
+                 </tr>
+                   ))}
+                       
                
                    
 
@@ -228,12 +211,14 @@ const USERS = 'SELECT * FROM user_tab WHERE '
                     <tbody>
 
                         
-                        <tr class="border-b dark:border-gray-700">
-                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">enimofeodujirin@gmail.com</th>
-                            <td class="px-4 py-3">Enimofe Odujirin</td>
-                          
-                        </tr>
-               
+                    {users.map(user=>(
+                     <tr class="border-b dark:border-gray-700">
+                     <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">{user.username}</th>
+                     <td class="px-4 py-3">{user.non_member_name}</td>
+                  
+                 </tr>
+                   ))}
+                       
                    
 
                        
@@ -362,7 +347,7 @@ const USERS = 'SELECT * FROM user_tab WHERE '
       </Modal>
         
       <Modal show={openModal2} onClose={() => setOpenModal2(false)}>
-        <Modal.Header>Edit a new user profile</Modal.Header>
+        <Modal.Header>Edit user role</Modal.Header>
         <Modal.Body>
           <div className="p-5">
           <form action="#" className='mt-5'>

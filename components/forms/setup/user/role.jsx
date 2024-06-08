@@ -18,7 +18,7 @@ export default function UserRole() {
     const [isMem , setIsMem] = useState(null)
     const [openModal, setOpenModal] = useState(false);
     const [openModal2, setOpenModal2] = useState(false);
-
+    const [users, setUsers] = useState([])
     const [openModal3, setOpenModal3] = useState(false);
 
     const inputChange = (e) => {
@@ -29,7 +29,27 @@ export default function UserRole() {
             setIsMember(false)
         }
       }
-
+      async function fetchUsers(){
+        const res = await fetch('http://localhost:5000/users', {
+            method: "GET",
+            headers: {
+    
+                "Content-Type": "application/json",
+            },
+        })
+        const data = await res.json()
+        console.log("Users: ", data)
+        setUsers(data)
+       
+    
+      
+        if (res.status >= 200 & res.status <= 209) {
+          
+            console.log("fetch successful")
+        }
+    }
+       
+fetchUsers()
   return (
     <>
         <Modal show={openModal2} onClose={() => setOpenModal2(false)} >
@@ -253,12 +273,13 @@ export default function UserRole() {
                       <tbody>
   
                           
-                          <tr class="border-b dark:border-gray-700">
-                              <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">jonobote@gmail.com</th>
-                              <td class="px-4 py-3">John Onobote</td>
-                           
-                          </tr>
+                      {users.map(user=>(
+                     <tr class="border-b dark:border-gray-700">
+                     <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">{user.username}</th>
+                     <td class="px-4 py-3">{user.non_member_name } </td>
                  
+                 </tr>
+                   ))}
                      
   
                          
