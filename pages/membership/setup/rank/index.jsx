@@ -264,46 +264,46 @@ export default function AccountType() {
 
                         <tr class="border-b dark:border-gray-700">
                             <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Superior Senior Leader</th>
-                            <td class="px-4 py-3">S/S/Ldr</td>
                             <td class="px-4 py-3">7</td>
+                            <td class="px-4 py-3">S/S/Ldr</td>
                             
                         </tr>
   
                         <tr class="border-b dark:border-gray-700">
                             <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Senior Leader</th>
-                            <td class="px-4 py-3">Snr.Ldr.</td>
                             <td class="px-4 py-3">6</td>
+                            <td class="px-4 py-3">Snr.Ldr.</td>
                             
                         </tr>
                         <tr class="border-b dark:border-gray-700">
                             <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Leader</th>
-                            <td class="px-4 py-3">Ldr.</td>
                             <td class="px-4 py-3">5</td>
+                            <td class="px-4 py-3">Ldr.</td>
                             
                         </tr>
                         <tr class="border-b dark:border-gray-700">
                             <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white"> Assistant Leader</th>
-                            <td class="px-4 py-3">A/Ldr.</td>
                             <td class="px-4 py-3">4</td>
+                            <td class="px-4 py-3">A/Ldr.</td>
                             
                         </tr>
                         <tr class="border-b dark:border-gray-700">
                             <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">  Cape Elder Brother</th>
-                            <td class="px-4 py-3">3</td>
                             <td class="px-4 py-3">C/E Bro</td>
+                            <td class="px-4 py-3">3</td>
                             
                         </tr>  <tr class="border-b dark:border-gray-700">
                             <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white"> Elder Brother</th>
-                            <td class="px-4 py-3">E/Bro</td>
                             <td class="px-4 py-3">2</td>
+                            <td class="px-4 py-3">E/Bro</td>
                             
                         </tr>
                         
 
                         <tr class="border-b dark:border-gray-700">
                             <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Brother</th>
-                            <td class="px-4 py-3">Bro.</td>
-                            <td class="px-4 py-3">1</td>
+                            <td class="px-4 py-3">1.</td>
+                            <td class="px-4 py-3">Bro</td>
                             
                         </tr>
                     </tbody>
