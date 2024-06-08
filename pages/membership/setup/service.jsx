@@ -213,19 +213,48 @@ export default function AccountType() {
       </Modal>
               
       <Modal show={openModal2} onClose={() => setOpenModal2(false)}>
-        <Modal.Header>Edit service</Modal.Header>
+        <Modal.Header>Edit congregational Gathering</Modal.Header>
         <Modal.Body>
           <div className="p-5">
           <form action="#" className='mt-5'>
             <div class="grid gap-2 sm:grid-cols-2 sm:gap-6">
             <div class="w-full">
-            <div class="flex items-center h-5">   
-        <label for="remember" class="ms-2 mr-2 text-xs font-medium text-gray-900 dark:text-gray-300">Member</label>  
-          <input id="remember" style={{borderRadius:100}} type="radio" name='radio' value="member" onChange={memberChange2} class="w-4 pl-2 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"  />
-          <label for="remember" class="ms-2 mr-2 text-xs font-medium text-gray-900 dark:text-gray-300">Non Member</label>
-          <input id="remember" style={{borderRadius:100}}  type="radio"  name='radio' value="non_member" onChange={nonMemberChange2}  class="w-4 h-4  pl-2 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"  />
-       </div> <br />
-          
+            <form action="#" className=''>
+            <div class="grid gap-2 sm:grid-cols-2 sm:gap-6">
+            <div class="w-full">
+           
+                           
+                    {/* {  <button style={{backgroundColor:"white", fontWeight:"bold", border:"1px solid black"}} type="submit" class="inline-flex font-bold items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-black bg-black rounded-lg">
+                        Search
+            </button>} */}
+                </div>
+                
+                <div class="sm:col-span-2 ">
+
+                <label for="name" class=" mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Service: </label>
+                         
+                          <select id="category" class="inline bg-gray-50 border border-gray-300 text-gray-900 text-xs  focus:ring-primary-500 focus:border-primary-500 block  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                              <option selected="">Select </option>
+                              <option selected="">Employed </option>
+                              <option selected="">Unemployed </option>
+                                 <option selected="">Student </option>
+                              
+                          </select>
+
+      
+
+                    
+                </div>
+             
+            
+            
+              
+         
+        
+        
+            </div>
+            
+            </form>
                 </div>
                 
              

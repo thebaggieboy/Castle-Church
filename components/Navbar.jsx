@@ -100,7 +100,7 @@ export default function NavBar() {
             <Menu.Item>
               {({ active }) => (
              
-                  <Dropdown  renderTrigger={() => <div className='text-center p-2' style={{cursor:'pointer' }}>User</div>}  className="mt-2 bg-blue-800 text-white" dismissOnClick={true} label="User" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
+                  <Dropdown  renderTrigger={() => <div className='text-center p-2' style={{cursor:'pointer' }}>User</div>}  className="mt-2 text-white hover:text-black  text-xs bg-blue-800 text-white" dismissOnClick={true} label="User" placement='right-start' style={{ marginLeft:10,textAlign:"center", color:"white", fontSize:10, maxWidth:"fit-content", marginInline:"auto" }}>
                     <Dropdown.Item as={"a"} className='text-white text-xs hover:text-black'  href="/admin/user/">
                       User Profile
                     </Dropdown.Item>
@@ -123,7 +123,7 @@ export default function NavBar() {
                        <Dropdown.Item as={""} className='text-white hover:text-black text-xs'  href="/membership/setup/marital_status?membership=marital_status">
                          Marital Status
                        </Dropdown.Item>
-                       <Dropdown.Item as={""} className='text-white hover:text-black text-xs'  href="/membership/setup/rank?occupation=occupation">
+                       <Dropdown.Item as={""} className='text-white hover:text-black text-xs'  href="/membership/setup/occupation?occupation=occupation">
                          Occupation
                        </Dropdown.Item>
                      </Dropdown> 
