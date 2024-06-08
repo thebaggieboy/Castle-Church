@@ -199,18 +199,113 @@ export default function AccountType() {
                         </tr>
                     </thead>
                     <tbody>
-
+                    <tr class="border-b dark:border-gray-700">
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Venerable Superior Evangelist</th>
+                            <td class="px-4 py-3">16</td>
+                            <td class="px-4 py-3"></td>
+                            
+                        </tr>
                         
                         <tr class="border-b dark:border-gray-700">
                             <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Superior Evangelist</th>
-                            <td class="px-4 py-3">5</td>
+                            <td class="px-4 py-3">15</td>
                             <td class="px-4 py-3">Sup.Evang.</td>
+                            
+                        </tr>
+                
+                    
+                        <tr class="border-b dark:border-gray-700">
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Superior Evangelist</th>
+                            <td class="px-4 py-3">14</td>
+                            <td class="px-4 py-3"> A/Sup.Evang.</td>
+                            
+                        </tr>
+                       
+                        <tr class="border-b dark:border-gray-700">
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Assistant Superior Evangelist</th>
+                            <td class="px-4 py-3">13</td>
+                            <td class="px-4 py-3"> A/Sup.Evang.</td>
+                            
+                        </tr>
+                       
+                        <tr class="border-b dark:border-gray-700">
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white"> Venerable Most Senior Evangelist</th>
+                            <td class="px-4 py-3">12</td>
+                            <td class="px-4 py-3"></td>
+                            
+                        </tr>
+                       
+                        <tr class="border-b dark:border-gray-700">
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Asst. Venerable Superior Evangelist</th>
+                            <td class="px-4 py-3">11</td>
+                            <td class="px-4 py-3">Asst. Venerable Superior Evangelist</td>
                          
                         </tr>
                
-                   
+                     
+                        <tr class="border-b dark:border-gray-700">
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Senior Evangelist</th>
+                            <td class="px-4 py-3">10</td>
+                            <td class="px-4 py-3">Snr. Evang</td>
+                            
+                        </tr>
+                        <tr class="border-b dark:border-gray-700">
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Assistant Evangelist</th>
+                            <td class="px-4 py-3">9</td>
+                            <td class="px-4 py-3">Evang.</td>
+                            
+                        </tr>
+                        <tr class="border-b dark:border-gray-700">
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Assistant Evangelist</th>
+                            <td class="px-4 py-3">8</td>
+                            <td class="px-4 py-3">A/Evang</td>
+                            
+                        </tr>
 
-                       
+                        <tr class="border-b dark:border-gray-700">
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Superior Senior Leader</th>
+                            <td class="px-4 py-3">S/S/Ldr</td>
+                            <td class="px-4 py-3">7</td>
+                            
+                        </tr>
+  
+                        <tr class="border-b dark:border-gray-700">
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Senior Leader</th>
+                            <td class="px-4 py-3">Snr.Ldr.</td>
+                            <td class="px-4 py-3">6</td>
+                            
+                        </tr>
+                        <tr class="border-b dark:border-gray-700">
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Leader</th>
+                            <td class="px-4 py-3">Ldr.</td>
+                            <td class="px-4 py-3">5</td>
+                            
+                        </tr>
+                        <tr class="border-b dark:border-gray-700">
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white"> Assistant Leader</th>
+                            <td class="px-4 py-3">A/Ldr.</td>
+                            <td class="px-4 py-3">4</td>
+                            
+                        </tr>
+                        <tr class="border-b dark:border-gray-700">
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">  Cape Elder Brother</th>
+                            <td class="px-4 py-3">3</td>
+                            <td class="px-4 py-3">C/E Bro</td>
+                            
+                        </tr>  <tr class="border-b dark:border-gray-700">
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white"> Elder Brother</th>
+                            <td class="px-4 py-3">E/Bro</td>
+                            <td class="px-4 py-3">2</td>
+                            
+                        </tr>
+                        
+
+                        <tr class="border-b dark:border-gray-700">
+                            <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">Brother</th>
+                            <td class="px-4 py-3">Bro.</td>
+                            <td class="px-4 py-3">1</td>
+                            
+                        </tr>
                     </tbody>
                 </table>
 
@@ -275,29 +370,48 @@ export default function AccountType() {
       <Modal show={openModal2} onClose={() => setOpenModal2(false)}>
         <Modal.Header>Edit a new rank</Modal.Header>
         <Modal.Body>
-          <div className="p-5">
-          <form action="#" className='mt-5'>
+        <div className="p-5">
+          <form action="#" className=''>
             <div class="grid gap-2 sm:grid-cols-2 sm:gap-6">
             <div class="w-full">
+                  
           
-            <label for="name" class=" mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Rank Name: </label>
-                    <input type="email" name="name" id="name" class=" inline bg-gray-50 border border-gray-300 text-gray-900 text-xs h-7 focus:ring-primary-600 focus:border-primary-600 block  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
-                   <br /> <br />
-                    <label for="name" class=" mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Rank Level: </label>
-                    <input type="email" name="name" id="name" class=" inline bg-gray-50 border border-gray-300 text-gray-900 text-xs h-7 focus:ring-primary-600 focus:border-primary-600 block  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
-                   
-         
-                </div>
                 
+                    {/* {  <button style={{backgroundColor:"white", fontWeight:"bold", border:"1px solid black"}} type="submit" class="inline-flex font-bold items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-black bg-black rounded-lg">
+                        Search
+            </button>} */}
+                </div>
              
             
+              
+         
         
         
             </div>
-            
+             
             </form>
 
           </div>
+        <div class="sm:col-span-2">
+
+              
+ 
+{isMember == false ? <>
+    <div className=''>
+    <label for="name" class=" mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Rank Name: </label>
+    <input type="text" name="name" id="name" class=" inline bg-gray-50 border border-gray-300 text-gray-900 text-xs h-7 focus:ring-primary-600 focus:border-primary-600 block l dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
+    </div>
+</> : ""}
+{isMember == false ? <>
+    <div className='pt-2'>
+    <label for="name" class=" mb-2 inline text-xs font-medium text-gray-900 dark:text-white">Rank Level: </label>
+    <input type="text" name="name" id="name" class=" inline bg-gray-50 border border-gray-300 text-gray-900 text-xs h-7 focus:ring-primary-600 focus:border-primary-600 block l dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required=""/>
+    </div>
+</> : ""}
+
+
+    
+</div>
         </Modal.Body>
         <Modal.Footer>
         <Button className='bg-blue-800 text-white' onClick={() => setOpenModal2(false)}>
