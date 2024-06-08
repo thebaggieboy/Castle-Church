@@ -475,11 +475,11 @@ const USERS = 'SELECT * FROM user_tab WHERE '
           </div>
         </Modal.Body>
         <Modal.Footer>
-        <Button className='bg-red-800 text-white' onClick={() => setOpenModal2(false)}>
+        <Button className='bg-red-800 text-white' onClick={() => setOpenModal3(false)}>
             Delete
           </Button>
 
-          <Button color="gray" onClick={() => setOpenModal2(false)}>
+          <Button color="gray" onClick={() => setOpenModal3(false)}>
             Exit
           </Button>
         </Modal.Footer>

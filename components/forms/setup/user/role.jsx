@@ -12,10 +12,14 @@ export  function GroupNameForm() {
 }
 export default function UserRole() {
     const [isMember , setIsMember] = useState(false)
+    const [isMember2 , setIsMember2] = useState(false)
+    const [isMember3 , setIsMember3] = useState(false)
     const [isUserTable , setIsUserTable] = useState(false)
     const [isMem , setIsMem] = useState(null)
     const [openModal, setOpenModal] = useState(false);
     const [openModal2, setOpenModal2] = useState(false);
+
+    const [openModal3, setOpenModal3] = useState(false);
 
     const inputChange = (e) => {
         const { checked, value } = e.target;
@@ -269,7 +273,7 @@ export default function UserRole() {
             <Button className='bg-gray-600 text-white text-xs' onClick={() => setOpenModal2(true)}>
               Edit
             </Button>
-            <Button className='bg-gray-600 text-white text-xs' onClick={() => setOpenModal2(true)}>
+            <Button className='bg-gray-600 text-white text-xs' onClick={() => setOpenModal3(true)}>
               Delete
             </Button>
             <Button className='bg-gray-100 text-black text-xs' onClick={() => router.back()}>
@@ -285,7 +289,40 @@ export default function UserRole() {
 
 
 
+        <Modal show={openModal3} onClose={() => setOpenModal3(false)}>
+        <Modal.Header>Delete user profile</Modal.Header>
+        <Modal.Body>
+          <div className="p-5">
+        
+<section class="bg-white p-5 dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 px-4">
+        <h4 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-2xl dark:text-white">You are about to delete this user role, do you want to continue?</h4>
+  
+        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+            <a href="/" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-red-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                Yes, i want to continue
+                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
+         
+        </div>
+    </div>
+</section>
 
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+        <Button className='bg-red-800 text-white' onClick={() => setOpenModal3(false)}>
+            Delete
+          </Button>
+
+          <Button color="gray" onClick={() => setOpenModal3(false)}>
+            Exit
+          </Button>
+        </Modal.Footer>
+      </Modal>
+      
 
 
     </>
